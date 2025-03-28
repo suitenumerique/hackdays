@@ -1,0 +1,96 @@
+import React from 'react';
+import Logo from '@/assets/logo.svg'
+import LogoHackDays from '@/assets/logohackdays.svg'
+import { motion, useAnimate } from "framer-motion";
+import { useEffect } from "react";
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { LocaleSwitcher } from '@/components/LocaleSwitcher'
+
+export function NavBar() {
+  const [nav, animate] = useAnimate();
+
+  const sequence = async () => {
+    await animate(nav.current, { top: 20 }, { delay: 0.2, duration: 0.5, ease: "easeOut" });
+    await animate(nav.current, { width: 492 }, { duration: 0.5, ease: "easeOut" });
+  };
+
+  useEffect(() => {
+    sequence();
+  }, []);
+
+  return (
+    <>
+    <motion.div
+      initial={{ top: '-100px', backgroundColor: 'transparent'}}
+      animate={{ top: '0px', backgroundColor: 'white' }}
+      transition={{ delay: 0, duration: 0.3, ease: "easeOut" }}
+      className="items-center flex z-1000 w-full bg-white fixed md:hidden top-[0px] left-[0px] h-[40px] justify-between">
+      <LocaleSwitcher />
+       <Link to="GameSetCode" smooth={true}>
+          <img
+            src={Logo.src}
+          />
+      </Link>
+      <a href="https://pretix.dgnum.eu/dgnum/hack-lsn-2025/"
+        target="_blank"
+        className="transition-all text-[13px] text-green-800 p-4 hover:text-orange-500">
+        S'inscrire
+      </a>
+    </motion.div>
+    <div
+      className="w-full hidden md:flex justify-center">
+      <motion.div
+        initial={{ top: '-100px', width: 40 }}
+        ref={nav}
+        transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
+        className="fixed overflow-hidden z-1000 p-[5px] text-[13px] top-[20px] border border-beige-200 bg-white rounded-3xl h-[40px]"
+        style={{ boxShadow: `0px 4px 9.3px 0px rgba(75, 41, 28, 0.05)` }}
+      >
+      <motion.a
+        initial={{ opacity: 1 }}
+        animate={{ opacity: 0 }}
+        transition={{ delay: 3, duration: 0.5 }}
+        className="absolute top-1.25"
+      >
+          <img className="" src={Logo.src} />
+      </motion.a>
+      <motion.ul
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1}}
+        transition={{ delay: 1.2, duration: 0.5, ease: "easeOut" }}
+        className="flex gap-4 items-center justify-between">
+      <li>
+        <Link to="GameSetCode" smooth={true} activeClass="text-orange-600" spy={true}>
+          <img className="w-[124px] overflow-hidden" src={LogoHackDays.src} />
+        </Link>
+      </li>
+      <li className="flex items-center hover:text-orange-600 cursor-pointer">
+        <Link to="AVosMarques" smooth={true} activeClass="text-orange-600" spy={true}>
+          Sujets
+        </Link>
+      </li>
+      <li className="flex items-center hover:text-orange-600 cursor-pointer">
+        <Link to="Partez" smooth={true} activeClass="text-orange-600" spy={true}>
+          Programme
+        </Link>
+      </li>
+      <li className="flex items-center hover:text-orange-600 cursor-pointer">
+        <Link to="Informations" smooth={true} activeClass="text-orange-600" spy={true}>
+          Infos pratiques
+        </Link>
+      </li>
+      <li className="flex items-center">
+        <a href="https://pretix.dgnum.eu/dgnum/hack-lsn-2025/"
+          target="_blank"
+          className="flex items-center px-4 py-1 transition-all bg-green-700 hover:bg-orange-500 text-beige-100 rounded-full">
+          S'inscrire
+        </a>
+      </li>
+      </motion.ul>
+      </motion.div>
+      <LocaleSwitcher className="hidden md:block" />
+
+    </div>
+    </>
+  );
+}
