@@ -92,11 +92,11 @@ export function NavBar() {
       </motion.div>
       <motion.div
         initial={{ top: '-100px', width: 40 }}
-        ref={nav}
+        animate={{ top: '20px'}}
         transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
         className="hidden md:block"
       >
-        <LocaleSwitcher />
+        <LocaleSwitcher className="hidden md:block" />
       </motion.div>
     </div>
     </>
