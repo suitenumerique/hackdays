@@ -3,11 +3,8 @@ import '@/styles/globals.css'
 import { useEffect } from 'react'
 import { TranslationsProvider } from '@/locales/useTranslations'
 import { useRouter } from 'next/router'
-//import { NavBar } from '@/components/NavBar'
-//import { Footer } from '@/components/Footer'
 import React from 'react'
-import { useTranslations } from '@/locales/useTranslations'
-
+import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -20,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div>
         <TranslationsProvider locale={locale || defaultLocale}>
             <Head>
-            <title>HackDays</title>
+            <title>HackDays - Hackathon Digital Workspace</title>
             <meta
               key="ogtitle"
               property="og:title"
@@ -30,11 +27,6 @@ export default function App({ Component, pageProps }: AppProps) {
               href="favicon.ico"
               rel="icon"
               media="(prefers-color-scheme: light)"
-            />
-            <link
-              href="favicon-dark.ico"
-              rel="icon"
-              media="(prefers-color-scheme: dark)"
             />
           </Head>
           <Component {...pageProps} />

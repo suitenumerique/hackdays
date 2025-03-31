@@ -1,7 +1,6 @@
 import { Menu, Transition } from '@headlessui/react'
 import { useRouter } from 'next/router'
 import { Fragment } from 'react'
-import { useTranslations } from '@/locales/useTranslations'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 import CheckIcon from '@mui/icons-material/Check'
 
@@ -13,7 +12,6 @@ const labels: Record<string, string> = {
 export const LocaleSwitcher = () => {
   const router = useRouter()
   const { pathname, asPath, query, locale, locales } = router
-  const t = useTranslations()
 
   if (!locales || locales.length < 2) {
     return null
@@ -40,7 +38,7 @@ export const LocaleSwitcher = () => {
         style={{boxShadow: `0px 4px 9.3px 0px rgba(75, 41, 28, 0.05)`}}>
           {locales.map((availableLocale) => (
             <Menu.Item key={availableLocale}>
-              {({ active }) => (
+              {() => (
                 <button
                   onClick={() =>
                     router.push({ pathname, query }, asPath, {

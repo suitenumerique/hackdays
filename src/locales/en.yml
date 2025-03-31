@@ -1,3 +1,8 @@
+menu:
+  tracks: Tracks
+  program: Program
+  info: Info
+  signup: Sign Up
 europe:
   europeans: Europeans,
   subtitle: The ball is in our court.
@@ -40,7 +45,7 @@ prets:
   docs:
     description: The open-source document editor based on the <a class="underline" href="https://www.blocknotejs.org/" target="_blank">Blocknote.js</a> library.
   visio:
-    description: The next-generation video conferencing app, built on <a class="underline" href="https://livekit.io/" target="_blank">Livekit</a> and <a class="underline" href="https://react-spectrum.adobe.com/react-aria/index.html" target="_blank">React Aria</a>.
+    description: The next-generation video conferencing app, built on <a class="underline" href="https://livekit.io/" target="_blank">Livekit</a>.
 partez:
   tag: Program
   title: GO!
@@ -70,6 +75,7 @@ histoire:
       title: "Docs #1 on Hacker News"
       description: Docs reached the top spot on Hacker News on 16th March.
       button: See the post
+      target: "https://www.linkedin.com/posts/arnaudrob1_opensource-hackernews-souverainetaeznumaezrique-activity-7307092201388339201-I8h_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB0yp2QBPzp5N_scoRtRkgy1bwsfmpE12F8"
     franceinfo:
       title: Docs sur France Info
       description: Docs a fait parler de lui à la radio.
@@ -82,6 +88,7 @@ histoire:
       title: Docs sur Reddit
       description: Ça discute de La Suite ici aussi !
       button: See the post
+      target: "https://www.reddit.com/r/BuyFromEU/comments/1jghleb/france_and_germany_unveil_docs_a_homegrown/?share_id=MjZ1gX1WE-2PgOK-nEqF4&utm_content=1&utm_medium=ios_app&utm_name=ioscss&utm_source=share&utm_term=1&rdt=43527"
     frandroid:
       title: La Suite sur Frandroid
       description: La presse parle de la Suite, de Docs et de Visio.
@@ -89,7 +96,7 @@ histoire:
 informations:
   tag: Practical Information
   title: LET’S MEET AT ENS
-  days: "Mon 2\/06 <br />Tues 3\/06<br />Wed 4\/06"
-  hours: 9:00AM - 6:00PM<br />9:00AM - 6:30PM<br />9:00AM - 6:00PM
+  days: "Mon 06\/02 <br />Tues 06\/03<br />Wed  06\/04"
+  hours: 9:00AM - 00:00PM<br />9:00AM - 00:00PM<br />9:00AM - 6:00PM
   buttonMaps: Open in maps
   buttonContact: Contact us

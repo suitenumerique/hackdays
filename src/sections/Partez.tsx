@@ -1,6 +1,6 @@
 import { useTranslations } from '@/locales/useTranslations'
-import { Chip } from '@/components/chip'
-import { useState } from 'react';
+import { Chip } from '@/components/Chip'
+import AnimatedSection from '@/components/AnimatedSection'
 
 import Date2 from '@/assets/date/date-2.png'
 import Date3 from '@/assets/date/date-3.png'
@@ -12,6 +12,7 @@ export function Partez() {
   return (
     <div id="Partez" className="relative w-full bg-beige-100 py-14 md:py-[106px] py-8">
       <div className="container mx-auto">
+        <AnimatedSection>
         <Chip text={t('partez.tag')} type="light" />
         <h3 className="font-title leading-14 py-8 uppercase text-green-700 text-[59px] md:text-[86px]">
           {t('partez.title')}
@@ -29,7 +30,9 @@ export function Partez() {
         >
           {t('partez.button')}
         </a>
+        </AnimatedSection>
 
+        <AnimatedSection delay={0.2}>
         <div className="bg-[#26312e] flex overflow-hidden mt-12 md:h-[180px] border-1 border-green-700 rounded-2xl">
           <img src={Date2.src} className="hidden lg:block h-[180px]" />
           <div className="p-8 relative flex-1"
@@ -42,7 +45,9 @@ export function Partez() {
             <p className="text-beige-100 text-base">{t('partez.days.1.description')}</p>
           </div>
         </div>
+        </AnimatedSection>
 
+        <AnimatedSection delay={0.4}>
         <div className="bg-[#26312e] flex overflow-hidden mt-12 md:h-[180px] border-1 border-green-700 rounded-2xl">
         <img src={Date3.src} className="hidden lg:block h-[180px]" />
           <div className="p-8 relative flex-1"
@@ -55,7 +60,9 @@ export function Partez() {
             <p className="text-beige-100 text-base">{t('partez.days.2.description')}</p>
           </div>
         </div>
+        </AnimatedSection>
 
+        <AnimatedSection delay={0.6}>
         <div className="bg-orange-600 flex overflow-hidden mt-12 md:h-[180px] border-1 border-orange-600 rounded-2xl">
           <img src={Date4.src} className="hidden lg:block h-[180px]"/>
           <div className="p-8 relative flex-1"
@@ -69,6 +76,7 @@ export function Partez() {
             <p className="text-beige-100 text-base">{t('partez.days.3.description')}</p>
           </div>
         </div>
+        </AnimatedSection>
       </div>
     </div>
   )

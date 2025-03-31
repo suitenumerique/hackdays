@@ -3,11 +3,13 @@ import Logo from '@/assets/logo.svg'
 import LogoHackDays from '@/assets/logohackdays.svg'
 import { motion, useAnimate } from "framer-motion";
 import { useEffect } from "react";
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
+import { useTranslations } from '@/locales/useTranslations'
 
 export function NavBar() {
   const [nav, animate] = useAnimate();
+  const t = useTranslations()
 
   const sequence = async () => {
     await animate(nav.current, { top: 20 }, { delay: 0.2, duration: 0.5, ease: "easeOut" });
@@ -34,7 +36,7 @@ export function NavBar() {
       <a href="https://pretix.dgnum.eu/dgnum/hack-lsn-2025/"
         target="_blank"
         className="transition-all text-[13px] text-green-800 p-4 hover:text-orange-500">
-        S'inscrire
+        {t('menu.signup')}
       </a>
     </motion.div>
     <div
@@ -66,30 +68,36 @@ export function NavBar() {
       </li>
       <li className="flex items-center hover:text-orange-600 cursor-pointer">
         <Link to="AVosMarques" smooth={true} activeClass="text-orange-600" spy={true}>
-          Sujets
+          {t('menu.tracks')}
         </Link>
       </li>
       <li className="flex items-center hover:text-orange-600 cursor-pointer">
         <Link to="Partez" smooth={true} activeClass="text-orange-600" spy={true}>
-          Programme
+          {t('menu.program')}
         </Link>
       </li>
       <li className="flex items-center hover:text-orange-600 cursor-pointer">
         <Link to="Informations" smooth={true} activeClass="text-orange-600" spy={true}>
-          Infos pratiques
+          {t('menu.info')}
         </Link>
       </li>
       <li className="flex items-center">
         <a href="https://pretix.dgnum.eu/dgnum/hack-lsn-2025/"
           target="_blank"
           className="flex items-center px-4 py-1 transition-all bg-green-700 hover:bg-orange-500 text-beige-100 rounded-full">
-          S'inscrire
+          {t('menu.signup')}
         </a>
       </li>
       </motion.ul>
       </motion.div>
-      <LocaleSwitcher className="hidden md:block" />
-
+      <motion.div
+        initial={{ top: '-100px', width: 40 }}
+        ref={nav}
+        transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
+        className="hidden md:block"
+      >
+        <LocaleSwitcher />
+      </motion.div>
     </div>
     </>
   );

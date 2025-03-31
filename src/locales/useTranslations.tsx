@@ -1,14 +1,13 @@
 import { createContext, useContext, type ReactNode } from 'react'
 import { get } from '../utils/get'
-// @ts-ignore
+// @ts-expect-error:  Importing YAML files requires custom types.
 import fr from './fr.yml'
-// @ts-ignore
+// @ts-expect-error:  Importing YAML files requires custom types.
 import en from './en.yml'
 
-type Translations = Record<string, any>
+type Translations = Record<string, string>
 const TranslationsContext = createContext<Translations>(fr)
 
-// this is not ideal, we load every locale file at once. will do for now…
 const locales: Record<string, Translations> = {
   fr,
   en
@@ -49,14 +48,12 @@ function useTranslations() {
         }
       })
       if (!componentKeys.length) {
-        // no component keys, just replace {key} with value
         return translation.replace(
           /{(\w+)}/g,
           (_, key) => params[key] as string
         ) as T
       }
 
-      // we have component keys: render react components
       const parts = translation.split(/{(.*?)}/)
       return (
         <>
