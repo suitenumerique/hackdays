@@ -113,7 +113,7 @@ export function AVosMarques() {
           onScroll={handleScroll}
           >
           {cards.map((card, index) => (
-            <div key={index} className="bg-white/[0.75] border border-beige-200 min-w-[267px] max-w-[267px] flex flex-col p-6 rounded-[16px] card-box-shadow gap-3">
+            <div key={index} className="snap-center bg-white/[0.75] border border-beige-200 min-w-[267px] max-w-[267px] flex flex-col p-6 rounded-[16px] card-box-shadow gap-3">
               <span className="text-7xl">{card.icon}</span>
               <span className="text-sm font-medium text-orange-500 font-code mt-2">{card.tag}</span>
               <h3 className="text-2xl font-bold">{card.title}</h3>

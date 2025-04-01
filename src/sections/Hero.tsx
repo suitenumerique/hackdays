@@ -38,7 +38,7 @@ export function Hero() {
     hidden: { opacity: 0 },
     visible: (i: number) => ({
       opacity: 1,
-      transition: { delay: i * 0.3 + 1.2, duration: 0.3 },
+      transition: { delay: i * 0.6 + 1.2, duration: 0.8 },
     }),
   };
 
@@ -47,11 +47,12 @@ export function Hero() {
       <AnimatedSection delay={0}>
       <div id="GameSetCode"
         className="relative h-[80vh] md:h-[100vh] w-full bg-cover bg-top
-        bg-[url('/images/hero/hero-mobile.png')] md:bg-[url('/images/hero/hero.png')]"
+          bg-[url('/images/hero/hero-mobile.png')]
+          md:bg-[url('/images/hero/hero.jpg')]"
        > 
        <motion.div
           className="absolute w-full top-O z-0 bg-cover bg-top inset-0
-            md:bg-[url('/images/hero/hero-matrix.png')]"
+            md:bg-[url('/images/hero/hero-matrix.jpg')]"
           initial={{ opacity: 0 }}
           animate={isClicked ? { 
             opacity: [0, 0.7, 0.2, 0.6, 0.8, 0.4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 

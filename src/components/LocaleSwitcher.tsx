@@ -30,7 +30,6 @@ export const LocaleSwitcher = () => {
     <Menu as="div" className="z-100 md:fixed block text-left top-[20px] right-[20px]">
       <Menu.Button
         className="cursor-pointer flex md:border-beige-200 items-center bg-white md:border rounded-full px-4 py-2 h-[40px] text-[13px] font-normal"
-        style={{ boxShadow: `0px 4px 9.3px 0px rgba(75, 41, 28, 0.05)` }}
       >
         {labels[locale ?? 'en']}
         <ArrowDropDownIcon className="w-5 h-5 ml-2 text-green-800 transition-transform focus:rotate-180" />

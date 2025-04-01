@@ -157,3 +157,9 @@ strong {
 .card-box-shadow {
   box-shadow: 0px 4px 16.6px 0px rgba(0, 0, 0, 0.10);
 }
+
+@media (min-width: 768px) {
+  .locale-switcher-shadow {
+    box-shadow: 0px 4px 9.3px 0px rgba(75, 41, 28, 0.05);
+  }
+}
