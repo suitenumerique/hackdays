@@ -1,7 +1,6 @@
-import { useTranslations } from '@/locales/useTranslations'
+import { useTranslations } from '@/hooks/useTranslations';
 import { Chip } from '@/components/Chip'
 import AnimatedSection from '@/components/AnimatedSection'
-import { useRouter } from 'next/router'
 
 import ScreenShotDocs from '@/assets/screenshot/screenshot-docs.png'
 import ScreenShotVisio from '@/assets/screenshot/screenshot-visio.png'
@@ -16,8 +15,7 @@ import LogoVisio from '@/assets/logo/logo-visio.svg'
 import LogoDocs from '@/assets/logo/logo-docs.svg'
 
 export function Prets() {
-  const t = useTranslations()
-  const { locale } = useRouter()
+  const { t, locale } = useTranslations()
 
   return (
     <div className="relative w-full bg-beige-100 py-14 md:py-[106px] py-8">

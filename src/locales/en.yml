@@ -74,25 +74,28 @@ histoire:
     hn:
       title: "Docs #1 on Hacker News"
       description: Docs reached the top spot on Hacker News on 16th March.
-      button: See the post
+      button: See post
       target: "https://www.linkedin.com/posts/arnaudrob1_opensource-hackernews-souverainetaeznumaezrique-activity-7307092201388339201-I8h_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB0yp2QBPzp5N_scoRtRkgy1bwsfmpE12F8"
-    franceinfo:
-      title: Docs sur France Info
-      description: Docs a fait parler de lui à la radio.
-      button: Écouter
-    linkedin:
-      title: La Suite sur LinkedIn
-      description: La Suite est mise en avant sur les réseaux.
-      button: See the post
     reddit:
-      title: Docs sur Reddit
-      description: Ça discute de La Suite ici aussi !
-      button: See the post
+      title: Docs on Reddit
+      description: There’s also a discussion about La Suite here!
+      button: See post
       target: "https://www.reddit.com/r/BuyFromEU/comments/1jghleb/france_and_germany_unveil_docs_a_homegrown/?share_id=MjZ1gX1WE-2PgOK-nEqF4&utm_content=1&utm_medium=ios_app&utm_name=ioscss&utm_source=share&utm_term=1&rdt=43527"
-    frandroid:
-      title: La Suite sur Frandroid
-      description: La presse parle de la Suite, de Docs et de Visio.
-      button: Voir l’article
+    techpost:
+      title: Docs on Techspot
+      description: This US journal talks about Docs as a potential replacement for US-made solutions.
+      button: See article
+      target: https://www.techspot.com/news/107225-france-germany-unveil-docs-collaborative-tool-rival-us.html
+    XDA:
+      title: Docs on XDA
+      description: This leading Canadian journal endorses Docs!
+      button: See article
+      target: https://www.xda-developers.com/docs-self-hosted-collaborative-note-taking-notion/
+    HowTo:
+      title: Docs on How-To Geek
+      description: Docs is presented as a strong European alternative.
+      button: See article
+      target: https://www.howtogeek.com/docs-alternative-google-docs-notion-france-germany/
 informations:
   tag: Practical Information
   title: LET’S MEET AT ENS

@@ -35,7 +35,6 @@
 
 
 :root {
-  --background: #ffffff;
   --foreground: #171717;
 
   --font-title: "Mullingar", serif;
@@ -54,6 +53,7 @@
   --color-orange-500: #E0785F;
   --color-orange-600: #BC5A3F;
   --color-orange-800: #4B291C;
+  --background: var(--color-orange-600);
 }
 
 @theme inline {

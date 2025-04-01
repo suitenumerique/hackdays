@@ -1,17 +1,14 @@
-import { useTranslations } from '@/locales/useTranslations'
+import { useTranslations } from '@/hooks/useTranslations';
 import { Chip } from '@/components/Chip'
-import { useRouter } from 'next/router'
 import AnimatedSection from '@/components/AnimatedSection'
 
 import Fame from '@/assets/fame.png'
 
 export function Histoire() {
-  const t = useTranslations()
-  const { locale } = useRouter()
-
+  const { t, locale } = useTranslations()
 
   const news = locale === 'fr' ? ['hn', 'franceinfo', 'linkedin', 'reddit', 'frandroid', 'bfm']
-    : ['hn', 'reddit']
+    : ['hn', 'reddit', 'techpost', 'XDA', 'HowTo']
 
   return (
     <div className="relative w-full bg-beige-100 py-14 md:py-[106px] py-8">

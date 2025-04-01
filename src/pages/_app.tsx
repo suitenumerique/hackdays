@@ -1,37 +1,35 @@
 import Head from 'next/head'
 import '@/styles/globals.css'
 import { useEffect } from 'react'
-import { TranslationsProvider } from '@/locales/useTranslations'
-import { useRouter } from 'next/router'
 import React from 'react'
 import type { AppProps } from 'next/app'
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
   }, [])
 
-  const { locale, defaultLocale } = useRouter()
-
   return (
-    <>
-      <div>
-        <TranslationsProvider locale={locale || defaultLocale}>
-            <Head>
-            <title>HackDays - Hackathon Digital Workspace</title>
+      <>
+        <Head>
+          <title>HackDays - Hackathon Digital Workspace</title>
             <meta
               key="ogtitle"
               property="og:title"
-              content="HackDays"
+              content="HackDays - Hackathon Digital Workspace - 2, 3 et 4 Juin 2025"
             />
             <link
-              href="favicon.ico"
+              href="favicon.png"
               rel="icon"
-              media="(prefers-color-scheme: light)"
+            />
+            <meta
+              key="ogimage"
+              property="og:image"
+              content="/images/rs.png"
             />
           </Head>
           <Component {...pageProps} />
-        </TranslationsProvider>
-      </div>
-    </>
+      </>
   )
 }
+
+export default App;

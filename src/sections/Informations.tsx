@@ -1,4 +1,4 @@
-import { useTranslations } from '@/locales/useTranslations'
+import { useTranslations } from '@/hooks/useTranslations';
 import { Chip } from '@/components/Chip'
 
 import logoDINUM from '@/assets/logo/logo-dinum.svg'
@@ -11,7 +11,7 @@ import ENS from '@/assets/building.png'
 import AnimatedSection from '@/components/AnimatedSection'
 
 export function Informations() {
-  const t = useTranslations()
+  const { t } = useTranslations()
   
   return (
     <div id="Informations" className="relative w-full bg-beige-100 py-14 md:py-[106px] py-8">
@@ -42,7 +42,7 @@ export function Informations() {
             </div>
 
             <a className="block text-lg text-beige-100 rounded-full bg-green-700 mb-2 text-center transition-all hover:bg-orange-500 py-1.5 font-medium decoration-0"
-                href="https://www.google.com/maps/place/Ens/@48.8220402,2.3289247,748m/data=!3m2!1e3!5s0x47e671a5f378297b:0xd50773adf2a894bf!4m6!3m5!1s0x47e671a5f33fffff:0x565f488a325ba2db!8m2!3d48.822338!4d2.3308799!16s%2Fg%2F11g8cpnctz?entry=tts&g_ep=EgoyMDI1MDMyMy4wIPu8ASoASAFQAw%3D%3D&skid=e5eaf55c-d88e-40c4-85d1-cc42cd14e488"
+                href="https://www.openstreetmap.org/way/23173231#map=18/48.822675/2.331749"
                 target="_blank"> {t(`informations.buttonMaps`)} </a>
             <a className="block text-lg rounded-full bg-beige-300/[0.5] text-center transition-all hover:bg-beige-300 py-1.5 font-medium decoration-0"
                 href="mailto:contact-hackdays@numerique.gouv.fr"

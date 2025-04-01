@@ -1,4 +1,4 @@
-import Stars from '@/assets/stars.svg'
+// import Stars from '@/assets/stars.svg'
 import AnimatedSection from '@/components/AnimatedSection'
 // import { useTranslations } from '@/locales/useTranslations'
 import logoDINUM from '@/assets/logo/logo-dinum.svg'

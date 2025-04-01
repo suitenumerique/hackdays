@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Title from '@/assets/title.svg'
 import TitleMobile from '@/assets/title-mobile.svg'
 import { motion } from 'framer-motion';
+import AnimatedSection from '@/components/AnimatedSection'
 
 export function Hero() {
   const [codeText, setCodeText] = useState("Code.");
@@ -43,6 +44,7 @@ export function Hero() {
 
   return (
     <>
+      <AnimatedSection delay={0}>
       <div id="GameSetCode"
         className="relative h-[80vh] md:h-[100vh] w-full bg-cover bg-top
         bg-[url('/images/hero/hero-mobile.png')] md:bg-[url('/images/hero/hero.png')]"
@@ -104,6 +106,7 @@ export function Hero() {
           </div>
         </div>
       </div>
+      </AnimatedSection>
     </>
   );
 }

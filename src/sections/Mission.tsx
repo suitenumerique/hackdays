@@ -1,9 +1,9 @@
-import { useTranslations } from '@/locales/useTranslations'
+import { useTranslations } from '@/hooks/useTranslations';
 import { Chip } from '@/components/Chip'
 import AnimatedSection from '@/components/AnimatedSection'
 
 export function Mission() {
-  const t = useTranslations()
+  const { t } = useTranslations()
   
   return (
     <>

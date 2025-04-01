@@ -1,4 +1,4 @@
-import { useTranslations } from '@/locales/useTranslations'
+import { useTranslations } from '@/hooks/useTranslations';
 import { Chip } from '@/components/Chip'
 import AnimatedSection from '@/components/AnimatedSection'
 
@@ -7,7 +7,7 @@ import Date3 from '@/assets/date/date-3.png'
 import Date4 from '@/assets/date/date-4.png'
 
 export function Partez() {
-  const t = useTranslations()
+  const { t } = useTranslations()
   
   return (
     <div id="Partez" className="relative w-full bg-beige-100 py-14 md:py-[106px] py-8">

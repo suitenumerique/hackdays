@@ -1,4 +1,4 @@
-import { useTranslations } from '@/locales/useTranslations'
+import { useTranslations } from '@/hooks/useTranslations';
 import { Chip } from '@/components/Chip'
 import { useState, useRef } from 'react';
 import AnimatedSection from '@/components/AnimatedSection'
@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 export function AVosMarques() {
 
-  const t = useTranslations()
+  const { t } = useTranslations()
   const [activeIndex, setActiveIndex] = useState(0);
 
 

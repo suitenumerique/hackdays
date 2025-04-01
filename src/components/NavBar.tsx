@@ -5,11 +5,11 @@ import { motion, useAnimate } from "framer-motion";
 import { useEffect } from "react";
 import { Link } from 'react-scroll';
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
-import { useTranslations } from '@/locales/useTranslations'
+import { useTranslations } from '@/hooks/useTranslations';
 
 export function NavBar() {
   const [nav, animate] = useAnimate();
-  const t = useTranslations()
+  const { t } = useTranslations();
 
   const sequence = async () => {
     await animate(nav.current, { top: 20 }, { delay: 0.2, duration: 0.5, ease: "easeOut" });
@@ -59,7 +59,7 @@ export function NavBar() {
       <motion.ul
         initial={{ opacity: 0 }}
         animate={{ opacity: 1}}
-        transition={{ delay: 1.2, duration: 0.5, ease: "easeOut" }}
+        transition={{ delay: 1.5, duration: 0.5, ease: "easeOut" }}
         className="flex gap-4 items-center justify-between">
       <li>
         <Link to="GameSetCode" smooth={true} activeClass="text-orange-600" spy={true}>
@@ -96,7 +96,7 @@ export function NavBar() {
         transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
         className="hidden md:block"
       >
-        <LocaleSwitcher className="hidden md:block" />
+        <LocaleSwitcher />
       </motion.div>
     </div>
     </>
