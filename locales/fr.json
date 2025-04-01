@@ -1,0 +1,140 @@
+{
+  "menu": {
+    "tracks": "Sujets",
+    "program": "Programme",
+    "info": "Infos pratiques",
+    "signup": "S’inscrire"
+  },
+  "europe": {
+    "europeans": "Européen.ne.s",
+    "subtitle": "La balle est dans notre camp."
+  },
+  "mission": {
+    "tags": {
+      "1": "On code",
+      "2": "On construit",
+      "3": "On transforme"
+    },
+    "title": "Votre Mission",
+    "description": "Pendant 3 jours, participez à la création d'une suite bureautique open source, destinée à renforcer la souveraineté numérique européenne."
+  },
+  "avosmarques": {
+    "tag": "Sujets de hack",
+    "title": "À vos marques.",
+    "description": "Rassemblons nos forces autour d'un sujet clair : les <strong>outils collaboratifs du quotidien</strong>. Edition de texte, tableurs, messagerie, vidéo-conférences, kanbans : tous ces terrains de jeu s'offrent à vous.</br> Découvrez les premières tracks :",
+    "cards": {
+      "1": {
+        "tag": "Travail collaboratif en local-first.",
+        "title": "Fixing collaboration",
+        "description": "Améliorez la collaboration en temps réel avec des CRDT, synchronisation offline, et outils décentralisés."
+      },
+      "2": {
+        "tag": "IA et automatisation dans La Suite.",
+        "title": "AI boosted",
+        "description": "RAG et chat avec vos fichiers, transcription automatique, Agentic AI pour l’édition intelligente, et autres fonctionnalités boostées à l’IA."
+      },
+      "3": {
+        "tag": "Infrastructure et accessibilité pour tous.",
+        "title": "Deploy me if you can !",
+        "description": "Déploiement 1-clic de La Suite, amélioration de l’accessibilité, optimisation des workspaces et outils OPS."
+      },
+      "4": {
+        "tag": "Custom blocks et extensions.",
+        "title": "Blocks Unleashed",
+        "description": "Intégration de nouveaux blocs (tableur, canvas, tableau blanc), personnalisation et nouvelles fonctionnalités pour enrichir les usages."
+      },
+      "5": {
+        "tag": "Adoption et nouveaux modèles.",
+        "title": "Boost & Scale",
+        "description": "Marketplace d'extensions, amélioration du support utilisateur, stratégies d'adoption et croissance de l'écosystème La Suite."
+      }
+    }
+  },
+  "prets": {
+    "tag": "Ressources",
+    "title": "PRÊTS ?",
+    "description": "Familiarisez-vous dès maintenant avec Docs et Visio, des applications open-source basées sur Django, Next.js et Vite.js.",
+    "docs": {
+      "description": "L’éditeur de documents open source basé sur la librairie <a class=\"underline\" href=\"https://www.blocknotejs.org/\" target=\"_blank\">BlockNote.js</a>."
+    },
+    "visio": {
+      "description": "L’app de visioconférence nouvelle génération, basée sur <a class=\"underline\" href=\"https://livekit.io/\" target=\"_blank\">Livekit</a>."
+    }
+  },
+  "partez": {
+    "tag": "Programme",
+    "title": "Partez !",
+    "description": "3 jours pour sprinter vers la souveraineté numérique ! Sur les trois jours, des plateaux repas seront mis à disposition.",
+    "button": "Réserver son ticket",
+    "days": {
+      "1": {
+        "date": "2 Juin",
+        "title": "Formation des équipes & développement",
+        "description": "Présentation des tracks, validation des équipes, début du développement.",
+        "chip": "Réservé aux hackers"
+      },
+      "2": {
+        "date": "3 Juin",
+        "title": "Développement",
+        "description": "Journée entièrement dédiée au développement.",
+        "chip": "Réservé aux hackers"
+      },
+      "3": {
+        "date": "4 Juin",
+        "title": "Démonstrations et talks",
+        "description": "Présentation des projets devant un jury suivi de talks. Les intervenants seront affichés ici prochainement.",
+        "chip": "Ouvert aux visiteurs"
+      }
+    }
+  },
+  "histoire": {
+    "tag": "News",
+    "title": "L'histoire est déjà en train de s'écrire !",
+    "news": {
+      "hn": {
+        "title": "Docs #1 sur Hacker News",
+        "description": "Docs a fait top 1 du site Hacker News le 16 mars dernier.",
+        "button": "Voir le post",
+        "target": "https://www.linkedin.com/posts/arnaudrob1_opensource-hackernews-souverainetaeznumaezrique-activity-7307092201388339201-I8h_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB0yp2QBPzp5N_scoRtRkgy1bwsfmpE12F8"
+      },
+      "franceinfo": {
+        "title": "Docs sur France Info",
+        "description": "Docs a fait parler de lui à la radio.",
+        "button": "Écouter",
+        "target": "https://www.radiofrance.fr/franceinfo/podcasts/aujourd-hui-c-est-demain"
+      },
+      "linkedin": {
+        "title": "La Suite sur LinkedIn",
+        "description": "La Suite est mise en avant sur les réseaux.",
+        "button": "Voir le post",
+        "target": "https://www.linkedin.com/posts/tbiarneix_access-a11y-souverainetaeznumaezrique-activity-7308786406565265411-bFl7/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB0yp2QBPzp5N_scoRtRkgy1bwsfmpE12F8"
+      },
+      "reddit": {
+        "title": "Docs sur Reddit",
+        "description": "Ça discute de La Suite ici aussi !",
+        "button": "Voir le post",
+        "target": "https://www.reddit.com/r/BuyFromEU/comments/1jghleb/france_and_germany_unveil_docs_a_homegrown/?share_id=MjZ1gX1WE-2PgOK-nEqF4&utm_content=1&utm_medium=ios_app&utm_name=ioscss&utm_source=share&utm_term=1&rdt=43527"
+      },
+      "frandroid": {
+        "title": "La Suite sur Frandroid",
+        "description": "La presse parle de la Suite, de Docs et de Visio.",
+        "button": "Voir l’article",
+        "target": "https://www.frandroid.com/culture-tech/web/2549907_voici-la-solution-francaise-publique-pour-vous-faire-oublier-google-docs-gmail-et-meet"
+      },
+      "bfm": {
+        "title": "La Suite sur BFM Business",
+        "description": "François Sorel parle de la Suite dans Tech & Co.",
+        "button": "Écouter",
+        "target": "https://podcasts.apple.com/fr/podcast/tech-co-la-quotidienne/id975125188?i=1000700819499&t=2475"
+      }
+    }
+  },
+  "informations": {
+    "tag": "Informations pratiques",
+    "title": "RDV À L’ENS",
+    "days": "Lundi 2 juin <br /> Mardi 3 juin <br /> Mercredi 4 juin",
+    "hours": "9h00 - 00h00  <br /> 9h00 - 00h00  <br /> 9h00 - 18h00",
+    "buttonMaps": "Ouvrir dans maps",
+    "buttonContact": "Nous contacter"
+  }
+}

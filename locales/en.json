@@ -1,0 +1,134 @@
+{
+  "menu": {
+    "tracks": "Tracks",
+    "program": "Program",
+    "info": "Info",
+    "signup": "Sign Up"
+  },
+  "europe": {
+    "europeans": "Europeans",
+    "subtitle": "The ball is in our court."
+  },
+  "mission": {
+    "tags": {
+      "1": "We code",
+      "2": "We build",
+      "3": "We transforme"
+    },
+    "title": "Your Mission",
+    "description": "For 3 days, take part in the creation of an open-source office suite aimed at strengthening European digital sovereignty."
+  },
+  "avosmarques": {
+    "tag": "Tracks",
+    "title": "GET SET.",
+    "description": "Let’s unite our efforts around a clear topic: <strong>everyday collaborative tools</strong>. Text editing, spreadsheets, messaging, video conferencing, kanbans: all these playgrounds are available to you. Discover the first tracks:",
+    "cards": {
+      "1": {
+        "tag": "Local-first collaborative work.",
+        "title": "Fixing collaboration",
+        "description": "Enhance real-time collaboration with CRDTs, offline synchronization, and decentralized tools."
+      },
+      "2": {
+        "tag": "AI and automation in La Suite.",
+        "title": "AI boosted",
+        "description": "RAG and chat with your files, automatic transcription, Agentic AI for smart editing, and other AI-boosted features."
+      },
+      "3": {
+        "tag": "Infrastructure and accessibility for all.",
+        "title": "Deploy me if you can!",
+        "description": "One-click deployment of La Suite, improved accessibility, optimized workspaces, and OPS tools."
+      },
+      "4": {
+        "tag": "Custom blocks and extensions.",
+        "title": "Blocks Unleashed",
+        "description": "Integration of new blocks (spreadsheet, canvas, whiteboard), customization, and new features to enrich usage."
+      },
+      "5": {
+        "tag": "Adoption and new models",
+        "title": "Boost & Scale",
+        "description": "Marketplace for extensions, improved user support, adoption strategies, and growth of La Suite ecosystem."
+      }
+    }
+  },
+  "prets": {
+    "tag": "Resources",
+    "title": "READY?",
+    "description": "Familiarise yourself now with Docs and Visio, open-source applications based on Django, Next.js, and Vite.js.",
+    "docs": {
+      "description": "The open-source document editor based on the <a class=\"underline\" href=\"https://www.blocknotejs.org/\" target=\"_blank\">Blocknote.js</a> library."
+    },
+    "visio": {
+      "description": "The next-generation video conferencing app, built on <a class=\"underline\" href=\"https://livekit.io/\" target=\"_blank\">Livekit</a>."
+    }
+  },
+  "partez": {
+    "tag": "Program",
+    "title": "GO!",
+    "description": "3 days to sprint towards digital sovereignty! During the three days, meal trays will be provided.",
+    "button": "Reserve my ticket",
+    "days": {
+      "1": {
+        "date": "2 June",
+        "title": "Launch & Team Training",
+        "description": "Presentation of the issues and challenges to be addressed; formation of multidisciplinary teams; start of development.",
+        "chip": "Reserved for hackers"
+      },
+      "2": {
+        "date": "3 June",
+        "title": "Development",
+        "description": "Continue development with your team.",
+        "chip": "Reserved for hackers"
+      },
+      "3": {
+        "date": "4 June",
+        "title": "Demonstrations and Conferences",
+        "description": "Presentation of projects before a jury followed by conferences. The speakers will be announced here soon.",
+        "chip": "Open to visitors"
+      }
+    }
+  },
+  "histoire": {
+    "tag": "News",
+    "title": "The story is already being written!",
+    "news": {
+      "hn": {
+        "title": "Docs #1 on Hacker News",
+        "description": "Docs reached the top spot on Hacker News on 16th March.",
+        "button": "See post",
+        "target": "https://www.linkedin.com/posts/arnaudrob1_opensource-hackernews-souverainetaeznumaezrique-activity-7307092201388339201-I8h_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB0yp2QBPzp5N_scoRtRkgy1bwsfmpE12F8"
+      },
+      "reddit": {
+        "title": "Docs on Reddit",
+        "description": "There’s also a discussion about La Suite here!",
+        "button": "See post",
+        "target": "https://www.reddit.com/r/BuyFromEU/comments/1jghleb/france_and_germany_unveil_docs_a_homegrown/?share_id=MjZ1gX1WE-2PgOK-nEqF4&utm_content=1&utm_medium=ios_app&utm_name=ioscss&utm_source=share&utm_term=1&rdt=43527"
+      },
+      "techpost": {
+        "title": "Docs on Techspot",
+        "description": "This US journal talks about Docs as a potential replacement for US-made solutions.",
+        "button": "See article",
+        "target": "https://www.techspot.com/news/107225-france-germany-unveil-docs-collaborative-tool-rival-us.html"
+      },
+      "XDA": {
+        "title": "Docs on XDA",
+        "description": "This leading Canadian journal endorses Docs!",
+        "button": "See article",
+        "target": "https://www.xda-developers.com/docs-self-hosted-collaborative-note-taking-notion/"
+      },
+      "HowTo": {
+        "title": "Docs on How-To Geek",
+        "description": "Docs is presented as a strong European alternative.",
+        "button": "See article",
+        "target": "https://www.howtogeek.com/docs-alternative-google-docs-notion-france-germany/"
+      }
+    }
+  },
+  "informations": {
+    "tag": "Practical Information",
+    "title": "LET’S MEET AT ENS",
+    "days": "Mon 06/02 <br />Tues 06/03<br />Wed 06/04",
+    "hours": "9:00AM - 00:00PM<br />9:00AM - 00:00PM<br />9:00AM - 6:00PM",
+    "buttonMaps": "Open in maps",
+    "buttonContact": "Contact us"
+  }
+}
