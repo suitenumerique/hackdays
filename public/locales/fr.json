@@ -35,7 +35,7 @@
       },
       "3": {
         "tag": "Infrastructure et accessibilité pour tous.",
-        "title": "Deploy me if you can !",
+        "title": "Click. Deploy. Make history.",
         "description": "Déploiement 1-clic d'applications, amélioration de l’accessibilité, optimisation des workspaces et outils OPS."
       },
       "4": {
@@ -51,7 +51,12 @@
       "6": {
         "tag": "Cas d'usages thématiques",
         "title": "So, so many use cases",
-        "description": "Santé, Education, Recherche, Agriculture, etc imaginez les nouveaux parcours pour vos cas d'usage spécifiques"
+        "description": "Santé, Education, Recherche, Agriculture, etc... Imaginez les nouveaux parcours pour vos cas d'usage spécifiques"
+      },
+      "7": {
+        "tag": "Chiffrement de bout en bout.",
+        "title": "Decipher me, if you can",
+        "description": "Communication et collaboration entièrement chiffrées pour une souveraineté totale. E2EE, chiffrement résistant aux quantiques, protocole Matrix, PGP, preuve à connaissance nulle ..."
       }
     }
   },

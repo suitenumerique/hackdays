@@ -35,7 +35,7 @@
       },
       "3": {
         "tag": "Infrastructure and accessibility for all.",
-        "title": "Deploy me if you can!",
+        "title": "Click. Deploy. Make history.",
         "description": "One-click deployment of apps, improved accessibility, optimized workspaces, and OPS tools."
       },
       "4": {
@@ -52,6 +52,11 @@
         "tag": "Thematic Use Cases",
         "title": "So, so many use cases",
         "description": "Health, Education, Research, Agriculture… Imagine new workflows tailored to your specific use cases."
+      },
+      "7": {
+        "tag": "End to end encryption",
+        "title": "Decipher me, if you can",
+        "description": "Fully encripted communication and collaboration for full-blown sovereignty. E2EE, quantum proof encryption, Matrix protocol, PGP, Zero Knowledge Proof ..."
       }
     }
   },

@@ -25,7 +25,7 @@ export function AVosMarques() {
           const containerLeft = containerRef.current.getBoundingClientRect().left;
           const pageLeft = document.body.getBoundingClientRect().left;
           const offset = containerLeft - pageLeft;
-          
+
           scrollContainerRef.current.style.paddingLeft = `${offset}px`;
         }
       } else {
@@ -44,6 +44,7 @@ export function AVosMarques() {
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const minSwipeDistance = 30; 
+  const [isAtEnd, setIsAtEnd] = useState(false);
 
   const onTouchStart = (e: React.TouchEvent) => {
     setTouchStart(e.touches[0].clientX);
@@ -67,8 +68,12 @@ export function AVosMarques() {
   };
 
   const handleScroll = (event: React.UIEvent) => {
-    const index = Math.floor(event.currentTarget.scrollLeft / 260); // 260px = largeur de chaque carte
+    const index = Math.round(event.currentTarget.scrollLeft / scrollAmount);
     setActiveIndex(index);
+    if (scrollContainerRef.current) {
+      const atEnd = scrollContainerRef.current.scrollLeft + scrollContainerRef.current.clientWidth >= scrollContainerRef.current.scrollWidth - 5;
+      setIsAtEnd(atEnd);
+    }
   };
 
   const scrollLeft = () => {
@@ -78,8 +83,7 @@ export function AVosMarques() {
   };
 
   const scrollRight = () => {
-    console.log(activeIndex, maxIndex);
-    if (scrollContainerRef.current && activeIndex + 1 < maxIndex) {
+    if (scrollContainerRef.current && activeIndex < maxIndex) {
       scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
@@ -120,9 +124,16 @@ export function AVosMarques() {
       tag: t('avosmarques.cards.6.tag'),
       title: t('avosmarques.cards.6.title'),
       description: t('avosmarques.cards.6.description'),
+    },
+    {
+      icon: "🙈",
+      tag: t('avosmarques.cards.7.tag'),
+      title: t('avosmarques.cards.7.title'),
+      description: t('avosmarques.cards.7.description'),
     }
   ]
-  const maxIndex = cards.length;
+
+  const maxIndex = cards.length - 1;
   
   return (
     <div id="AVosMarques" className="relative w-full pt-[96px] pb-[56px] md:py-[106px]">
@@ -148,10 +159,10 @@ export function AVosMarques() {
           onTouchEnd={onTouchEnd}
           >
           {cards.map((card, index) => (
-            <div key={index} className="snap-center bg-white/[0.75] border border-beige-200 min-w-[267px] max-w-[267px] flex flex-col p-6 rounded-[16px] card-box-shadow gap-3">
-              <span className="text-7xl">{card.icon}</span>
-              <span className="text-sm font-medium text-orange-500 font-code mt-2">{card.tag}</span>
-              <h3 className="text-2xl font-bold">{card.title}</h3>
+            <div key={index} className="snap-center bg-white/[0.75] border border-beige-200 min-w-[267px] max-w-[267px] flex flex-col p-6 rounded-[16px] card-box-shadow gap-2">
+              <span className="text-[81px]">{card.icon}</span>
+              <span className="text-sm font-medium text-orange-500 font-code mt-2 h-[34px]">{card.tag}</span>
+              <h3 className="text-2xl font-bold text-green-700 mt-4">{card.title}</h3>
               <p className="text-green-700 font-normal text-base">{card.description}</p>
             </div>
           ))}
@@ -160,7 +171,8 @@ export function AVosMarques() {
         <div className="swiper-arrows relative text-center mx-auto mt-3">
           <div className="flex gap-4 justify-center">
             <button onClick={scrollLeft} 
-              className={`flex text-green-700 cursor-pointer transition-all h-[42px] px-[9px] py-[6px] justify-center items-center gap-[4px] rounded-full
+              disabled={ activeIndex === 0 }
+              className={`flex text-green-700 cursor-pointer disabled:cursor-default transition-all h-[42px] px-[9px] py-[6px] justify-center items-center gap-[4px] rounded-full
                ${activeIndex === 0 ? 'bg-beige-300/[0.25] text-green-300' : 'bg-beige-300/[0.5]'}`}>
               <ArrowBackIcon fontSize="medium" />
             </button>
@@ -175,8 +187,9 @@ export function AVosMarques() {
             </div>
 
             <button onClick={scrollRight} 
-              className={`flex cursor-pointer transition-all text-green-700 h-[42px] px-[9px] py-[6px] justify-center items-center gap-[4px] rounded-full
-                ${activeIndex + 1 === maxIndex ? 'bg-beige-300/[0.25] text-green-300' : 'bg-beige-300/[0.5]'}`}>
+              disabled={ activeIndex === maxIndex || isAtEnd }
+              className={`flex cursor-pointer disabled:cursor-default transition-all text-green-700 h-[42px] px-[9px] py-[6px] justify-center items-center gap-[4px] rounded-full
+                ${activeIndex === maxIndex || isAtEnd ? 'bg-beige-300/[0.25] text-green-300' : 'bg-beige-300/[0.5]'}`}>
               <ArrowForwardIcon fontSize="medium" />
             </button>
           </div>
