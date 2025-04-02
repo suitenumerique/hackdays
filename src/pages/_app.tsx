@@ -38,7 +38,7 @@ function App({ Component, pageProps }: AppProps) {
             <link rel="preload" href="/fonts/DMSans.ttf" as="font" type="font/woff2" crossOrigin="anonymous" />
             <link rel="preload" href="/fonts/Domine.ttf" as="font" type="font/woff2" crossOrigin="anonymous" />
             <link rel="preload" href="/images/hero.webp" as="image" />
-            <link rel="preload" href="/images/hero-mobile.jpg" as="image" />
+            <link rel="preload" href="/images/hero-mobile.png" as="image" />
             <link rel="preload" href="/images/hero-matrix.webp" as="image" />
 
           </Head>

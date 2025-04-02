@@ -3,7 +3,7 @@ import { Chip } from '@/components/Chip'
 
 import logoDINUM from '@/assets/logo/logo-dinum.svg'
 import logoDGNUM from '@/assets/logo/logo-dgnum.svg'
-import logoCFF from '@/assets/logo/logo-cff.svg'
+// import logoCFF from '@/assets/logo/logo-cff.svg'
 
 import logoENS from '@/assets/logo/logo-ens.svg'
 import ENS from '@/assets/building.png'
@@ -42,8 +42,8 @@ export function Informations() {
             </div>
 
             <a className="block text-lg text-beige-100 rounded-full bg-green-700 mb-2 text-center transition-all hover:bg-orange-500 py-1.5 font-medium decoration-0"
-                href="https://maps.app.goo.gl/KVAVVDkdeRiumd9PA"
-                target="_blank"> {t(`informations.buttonMaps`)} </a>
+                href="https://pretix.dgnum.eu/dgnum/hack-lsn-2025/"
+                target="_blank"> {t(`informations.buttonSignup`)} </a>
             <a className="block text-lg rounded-full bg-beige-300/[0.5] text-center transition-all hover:bg-beige-300 py-1.5 font-medium decoration-0"
                 href="mailto:contact-hackdays@numerique.gouv.fr"
                 target="_blank"> {t(`informations.buttonContact`)} </a>
@@ -60,9 +60,9 @@ export function Informations() {
           <img src={logoENS.src} className="mx-auto self-end" />
           <img src={logoDGNUM.src} className="self-end" />
         </div>
-        <div className="flex justify-center pt-6">
+{/*        <div className="flex justify-center pt-6">
           <img src={logoCFF.src} className="w-[103px] self-end" />
-        </div>
+        </div>*/}
         </AnimatedSection>
 
       </div>

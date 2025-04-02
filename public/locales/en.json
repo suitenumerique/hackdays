@@ -13,10 +13,10 @@
     "tags": {
       "1": "We code",
       "2": "We build",
-      "3": "We transforme"
+      "3": "We transform"
     },
     "title": "Your Mission",
-    "description": "For 3 days, take part in the creation of an open-source office suite aimed at strengthening European digital sovereignty."
+    "description": "For three days, take part in the creation of open-source apps aimed at strengthening European digital sovereignty."
   },
   "avosmarques": {
     "tag": "Tracks",
@@ -29,14 +29,14 @@
         "description": "Enhance real-time collaboration with CRDTs, offline synchronization, and decentralized tools."
       },
       "2": {
-        "tag": "AI and automation in La Suite.",
+        "tag": "AI and automation.",
         "title": "AI boosted",
         "description": "RAG and chat with your files, automatic transcription, Agentic AI for smart editing, and other AI-boosted features."
       },
       "3": {
         "tag": "Infrastructure and accessibility for all.",
         "title": "Deploy me if you can!",
-        "description": "One-click deployment of La Suite, improved accessibility, optimized workspaces, and OPS tools."
+        "description": "One-click deployment of apps, improved accessibility, optimized workspaces, and OPS tools."
       },
       "4": {
         "tag": "Custom blocks and extensions.",
@@ -46,7 +46,12 @@
       "5": {
         "tag": "Adoption and new models",
         "title": "Boost & Scale",
-        "description": "Marketplace for extensions, improved user support, adoption strategies, and growth of La Suite ecosystem."
+        "description": "Marketplace for extensions, improved user support, adoption strategies, and growth of an app ecosystem."
+      },
+      "6": {
+        "tag": "Thematic Use Cases",
+        "title": "So, so many use cases",
+        "description": "Health, Education, Research, Agriculture… Imagine new workflows tailored to your specific use cases."
       }
     }
   },
@@ -99,7 +104,7 @@
       },
       "reddit": {
         "title": "Docs on Reddit",
-        "description": "There’s also a discussion about La Suite here!",
+        "description": "There’s also a discussion about Docs here!",
         "button": "See post",
         "target": "https://www.reddit.com/r/BuyFromEU/comments/1jghleb/france_and_germany_unveil_docs_a_homegrown/?share_id=MjZ1gX1WE-2PgOK-nEqF4&utm_content=1&utm_medium=ios_app&utm_name=ioscss&utm_source=share&utm_term=1&rdt=43527"
       },
@@ -128,7 +133,7 @@
     "title": "LET’S MEET AT ENS",
     "days": "Mon 06/02 <br />Tues 06/03<br />Wed 06/04",
     "hours": "9:00AM - 00:00PM<br />9:00AM - 00:00PM<br />9:00AM - 6:00PM",
-    "buttonMaps": "Open in maps",
+    "buttonSignup": "Sign Up",
     "buttonContact": "Contact us"
   }
 }

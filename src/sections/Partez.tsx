@@ -14,10 +14,10 @@ export function Partez() {
       <div className="container mx-auto">
         <AnimatedSection>
         <Chip text={t('partez.tag')} type="light" />
-        <h3 className="font-title leading-14 py-8 uppercase text-green-700 text-[59px] md:text-[86px]">
+        <h3 className="font-title leading-14 py-3 md:py-8 uppercase text-green-700 text-[59px] md:text-[86px]">
           {t('partez.title')}
         </h3>
-        <p className="text-green-500 max-w-[800px] text-normal mb-8"> 
+        <p className="block text-green-500 max-w-[800px] text-normal mb-8"> 
           {t('partez.description')}
         </p>
         
@@ -26,14 +26,14 @@ export function Partez() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={t('partez.button')}
-          className="inline mt-12 mb-12 px-8 py-3 rounded-full bg-green-700 text-beige-100 text-center transition-all hover:bg-orange-500"
+          className="block inline mt-12 mb-12 px-8 py-3 rounded-full bg-green-700 text-beige-100 text-center transition-all hover:bg-orange-500"
         >
           {t('partez.button')}
         </a>
         </AnimatedSection>
 
         <AnimatedSection delay={0.2}>
-        <div className="bg-[#26312e] flex overflow-hidden mt-4 md:mt-12 md:h-[180px] border-1 border-green-700 rounded-2xl">
+        <div className="bg-[#26312e] flex overflow-hidden mt-9 md:mt-12 md:h-[180px] border-1 border-green-700 rounded-2xl">
           <img src={Date2.src} className="hidden lg:block h-[180px]" />
           <div className="p-8 relative flex-1"
             style={{

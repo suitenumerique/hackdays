@@ -41,16 +41,16 @@ export function AVosMarques() {
     return () => window.removeEventListener("resize", updatePadding);
   }, []);
 
-  const [touchStart, setTouchStart] = useState(null);
-  const [touchEnd, setTouchEnd] = useState(null);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const minSwipeDistance = 30; 
 
-  const onTouchStart = (e) => {
+  const onTouchStart = (e: React.TouchEvent) => {
     setTouchStart(e.touches[0].clientX);
     setTouchEnd(null);
   };
 
-  const onTouchMove = (e) => {
+  const onTouchMove = (e: React.TouchEvent) => {
     setTouchEnd(e.touches[0].clientX);
   };
 
@@ -114,6 +114,12 @@ export function AVosMarques() {
       tag: t('avosmarques.cards.5.tag'),
       title: t('avosmarques.cards.5.title'),
       description: t('avosmarques.cards.5.description'),
+    },
+    {
+      icon: "🤩",
+      tag: t('avosmarques.cards.6.tag'),
+      title: t('avosmarques.cards.6.title'),
+      description: t('avosmarques.cards.6.description'),
     }
   ]
   const maxIndex = cards.length;
