@@ -13,7 +13,6 @@ export function AVosMarques() {
   const { t } = useTranslations()
   const [activeIndex, setActiveIndex] = useState(0);
 
-
   const containerRef = useRef<HTMLDivElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -42,19 +41,45 @@ export function AVosMarques() {
     return () => window.removeEventListener("resize", updatePadding);
   }, []);
 
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  const minSwipeDistance = 30; 
+
+  const onTouchStart = (e) => {
+    setTouchStart(e.touches[0].clientX);
+    setTouchEnd(null);
+  };
+
+  const onTouchMove = (e) => {
+    setTouchEnd(e.touches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    
+    if (distance > minSwipeDistance) {
+      scrollRight();
+    } else if (distance < -minSwipeDistance) {
+      scrollLeft();
+    }
+  };
+
   const handleScroll = (event: React.UIEvent) => {
     const index = Math.floor(event.currentTarget.scrollLeft / 260); // 260px = largeur de chaque carte
     setActiveIndex(index);
   };
 
   const scrollLeft = () => {
-    if (scrollContainerRef.current) {
+    if (scrollContainerRef.current && activeIndex > -1) {
       scrollContainerRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     }
   };
 
   const scrollRight = () => {
-    if (scrollContainerRef.current) {
+    console.log(activeIndex, maxIndex);
+    if (scrollContainerRef.current && activeIndex + 1 < maxIndex) {
       scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
@@ -91,13 +116,14 @@ export function AVosMarques() {
       description: t('avosmarques.cards.5.description'),
     }
   ]
+  const maxIndex = cards.length;
   
   return (
-    <div id="AVosMarques" className="relative w-full bg-beige-100 md:py-[106px] py-8">
+    <div id="AVosMarques" className="relative w-full pt-[96px] pb-[56px] md:py-[106px]">
       <div ref={containerRef} className="container mx-auto">
         <AnimatedSection>
         <Chip text={t('avosmarques.tag')} type="light" />
-        <h3 className="font-title leading-14 py-8 uppercase text-green-700 text-[59px] md:text-[86px]">
+        <h3 className="font-title leading-14 py-3 md:py-8 uppercase text-green-700 text-[59px] md:text-[86px]">
           {t('avosmarques.title')}
         </h3>
         <p className="text-green-500 max-w-[800px] text-normal"
@@ -109,8 +135,11 @@ export function AVosMarques() {
 
         <div 
           ref={scrollContainerRef}
-          className={`overflow-x-auto flex snap-x gap-6 pr-[180px] pt-7 pb-5 scroll-smooth transition-[padding] duration-300`}
+          className={`swipper-scroll overflow-hidden md:overflow-x-auto flex snap-x gap-6 pr-[180px] pt-9 pb-5 md:pt-7 md:pb-7 scroll-smooth transition-[padding] duration-300`}
           onScroll={handleScroll}
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
           >
           {cards.map((card, index) => (
             <div key={index} className="snap-center bg-white/[0.75] border border-beige-200 min-w-[267px] max-w-[267px] flex flex-col p-6 rounded-[16px] card-box-shadow gap-3">
@@ -122,11 +151,11 @@ export function AVosMarques() {
           ))}
         </div>
 
-        <div className="swiper-arrows relative text-center mx-auto mt-5">
+        <div className="swiper-arrows relative text-center mx-auto mt-3">
           <div className="flex gap-4 justify-center">
             <button onClick={scrollLeft} 
               className={`flex text-green-700 cursor-pointer transition-all h-[42px] px-[9px] py-[6px] justify-center items-center gap-[4px] rounded-full
-               ${activeIndex === 0 ? 'bg-beige-300/[0.25]' : 'bg-beige-300/[0.5]'}`}>
+               ${activeIndex === 0 ? 'bg-beige-300/[0.25] text-green-300' : 'bg-beige-300/[0.5]'}`}>
               <ArrowBackIcon fontSize="medium" />
             </button>
 
@@ -136,20 +165,16 @@ export function AVosMarques() {
                 key={index}
                 className={`w-2 h-2 rounded-full ${activeIndex === index  ? 'bg-green-700' : 'bg-beige-300'}`}
                 />
-
               ))}
             </div>
 
             <button onClick={scrollRight} 
               className={`flex cursor-pointer transition-all text-green-700 h-[42px] px-[9px] py-[6px] justify-center items-center gap-[4px] rounded-full
-                ${activeIndex === cards.length ? 'bg-beige-300/[0.25]' : 'bg-beige-300/[0.5]'}`}>
+                ${activeIndex + 1 === maxIndex ? 'bg-beige-300/[0.25] text-green-300' : 'bg-beige-300/[0.5]'}`}>
               <ArrowForwardIcon fontSize="medium" />
             </button>
           </div>
         </div>
-
-
-      
     </div>
   )
 }

@@ -12,18 +12,18 @@ export function Mission() {
           <div className="sub-hero-title-subborder w-full">
              <div className="container mx-auto md:py-[120px] py-8">
               <div className="flex gap-4 md:justify-center flex-wrap md:flex-nowrap">
-                <AnimatedSection delay={0.2}>
+                <AnimatedSection delay={0.3}>
                   <Chip text={t('mission.tags.1')} type="dark" />
                 </AnimatedSection>
-                <AnimatedSection delay={0.4}>
+                <AnimatedSection delay={0.9}>
                   <Chip text={t('mission.tags.2')} type="dark" />
                 </AnimatedSection>
-                <AnimatedSection delay={0.6}>
+                <AnimatedSection delay={1.2}>
                   <Chip text={t('mission.tags.3')} type="dark" />
                 </AnimatedSection>
               </div>
               <AnimatedSection>
-              <h3 className="font-title leading-14 py-8 uppercase md:text-center text-beige-100 text-[59px] md:text-[86px]">
+              <h3 className="font-title leading-14 py-[12px] md:py-8 uppercase md:text-center text-beige-100 text-[59px] md:text-[86px]">
                 {t('mission.title')}
               </h3>
               <p className="md:mx-auto font-text text-[#F8F6F2] max-w-[478px] text-left md:text-center">

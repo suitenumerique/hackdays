@@ -20,12 +20,27 @@ function App({ Component, pageProps }: AppProps) {
             <link
               href="favicon.png"
               rel="icon"
+              media="(prefers-color-scheme: dark)"
+            />
+            <link
+              href="favicon-light.png"
+              rel="icon"
+              media="(prefers-color-scheme: light)"
             />
             <meta
               key="ogimage"
               property="og:image"
               content="/images/rs.png"
             />
+            <link rel="preload" href="/fonts/DMMono-Medium.ttf" as="font" type="font/woff2" crossOrigin="anonymous" />
+            <link rel="preload" href="/fonts/Mullingar.ttf" as="font" type="font/woff2" crossOrigin="anonymous" />
+            <link rel="preload" href="/fonts/DMMono-Regular.ttf" as="font" type="font/woff2" crossOrigin="anonymous" />
+            <link rel="preload" href="/fonts/DMSans.ttf" as="font" type="font/woff2" crossOrigin="anonymous" />
+            <link rel="preload" href="/fonts/Domine.ttf" as="font" type="font/woff2" crossOrigin="anonymous" />
+            <link rel="preload" href="/images/hero.webp" as="image" />
+            <link rel="preload" href="/images/hero-mobile.jpg" as="image" />
+            <link rel="preload" href="/images/hero-matrix.webp" as="image" />
+
           </Head>
           <Component {...pageProps} />
       </>

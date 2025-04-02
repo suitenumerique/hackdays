@@ -45,18 +45,21 @@ export function Hero() {
   return (
     <>
       <AnimatedSection delay={0}>
-      <div id="GameSetCode"
+      <motion.div 
+        initial={{filter: 'blur(4px)'}}
+        animate={{ filter: 'none' }}
+        id="GameSetCode"
         className="relative h-[80vh] md:h-[100vh] w-full bg-cover bg-top
           bg-[url('/images/hero/hero-mobile.png')]
-          md:bg-[url('/images/hero/hero.jpg')]"
+          md:bg-[url('/images/hero/hero.webp')]"
        > 
        <motion.div
           className="absolute w-full top-O z-0 bg-cover bg-top inset-0
-            md:bg-[url('/images/hero/hero-matrix.jpg')]"
+            md:bg-[url('/images/hero/hero-matrix.webp')]"
           initial={{ opacity: 0 }}
           animate={isClicked ? { 
-            opacity: [0, 0.7, 0.2, 0.6, 0.8, 0.4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 
-            transition: { duration: 3.5, ease: "easeInOut" } 
+            opacity: [0, 1, 0, 0.7, 0, 0.8, 0, 0.8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 
+            transition: { duration: 4.5 } 
           } : {}}>
         </motion.div>
         
@@ -65,7 +68,7 @@ export function Hero() {
             {sentence.map((word, wordIndex) => (
               <motion.span
                 key={wordIndex}
-                className="hero-title-word"
+                className={`hero-title-word ${wordIndex === 2 ? "hero-title-matrix-hover" : ""}`}
                 initial="hidden"
                 animate="visible"
                 custom={wordIndex}
@@ -95,7 +98,7 @@ export function Hero() {
             ))}
           </h1>
         </div>
-      </div>
+      </motion.div>
       
       <div className="sub-hero-title relative w-full bg-green-700">
         <div className="sub-hero-title-border w-full">

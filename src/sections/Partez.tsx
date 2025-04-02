@@ -10,7 +10,7 @@ export function Partez() {
   const { t } = useTranslations()
   
   return (
-    <div id="Partez" className="relative w-full bg-beige-100 py-14 md:py-[106px] py-8">
+    <div id="Partez" className="relative w-full py-14 md:py-[106px] py-8">
       <div className="container mx-auto">
         <AnimatedSection>
         <Chip text={t('partez.tag')} type="light" />
@@ -33,7 +33,7 @@ export function Partez() {
         </AnimatedSection>
 
         <AnimatedSection delay={0.2}>
-        <div className="bg-[#26312e] flex overflow-hidden mt-12 md:h-[180px] border-1 border-green-700 rounded-2xl">
+        <div className="bg-[#26312e] flex overflow-hidden mt-4 md:mt-12 md:h-[180px] border-1 border-green-700 rounded-2xl">
           <img src={Date2.src} className="hidden lg:block h-[180px]" />
           <div className="p-8 relative flex-1"
             style={{
@@ -48,7 +48,7 @@ export function Partez() {
         </AnimatedSection>
 
         <AnimatedSection delay={0.4}>
-        <div className="bg-[#26312e] flex overflow-hidden mt-12 md:h-[180px] border-1 border-green-700 rounded-2xl">
+        <div className="bg-[#26312e] flex overflow-hidden mt-4 md:mt-12 md:h-[180px] border-1 border-green-700 rounded-2xl">
         <img src={Date3.src} className="hidden lg:block h-[180px]" />
           <div className="p-8 relative flex-1"
            style={{
@@ -63,7 +63,7 @@ export function Partez() {
         </AnimatedSection>
 
         <AnimatedSection delay={0.6}>
-        <div className="bg-orange-600 flex overflow-hidden mt-12 md:h-[180px] border-1 border-orange-600 rounded-2xl">
+        <div className="bg-orange-600 flex overflow-hidden mt-4 md:mt-12 md:h-[180px] border-1 border-orange-600 rounded-2xl">
           <img src={Date4.src} className="hidden lg:block h-[180px]"/>
           <div className="p-8 relative flex-1"
               style={{

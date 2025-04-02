@@ -17,9 +17,11 @@ export default function Index() {
         <Hero />
         <Europe />
         <Mission />
-        <AVosMarques />
-        <Prets />
-        <Partez />
+        <div className="bg-beige-100">
+          <AVosMarques />
+          <Prets />
+          <Partez />
+        </div>
         <Histoire />
         <Informations />
       </div>

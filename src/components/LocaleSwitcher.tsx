@@ -29,10 +29,10 @@ export const LocaleSwitcher = () => {
   return (
     <Menu as="div" className="z-100 md:fixed block text-left top-[20px] right-[20px]">
       <Menu.Button
-        className="cursor-pointer flex md:border-beige-200 items-center bg-white md:border rounded-full px-4 py-2 h-[40px] text-[13px] font-normal"
+        className="cursor-pointer flex md:border-beige-200 text-green-700 items-center bg-white md:border rounded-full px-4 py-2 h-[40px] text-[13px] font-medium"
       >
         {labels[locale ?? 'en']}
-        <ArrowDropDownIcon className="w-5 h-5 ml-2 text-green-800 transition-transform focus:rotate-180" />
+        <ArrowDropDownIcon fontSize="small" className="w-4 h-4 ml-2 text-green-700 transition-transform focus:rotate-180" />
       </Menu.Button>
 
       <Transition
@@ -43,13 +43,13 @@ export const LocaleSwitcher = () => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="border border-beige-200 absolute left-0 mt-2 w-20 bg-white rounded-md">
+        <Menu.Items className="border border-beige-200 absolute left-0 mt-1 mr-1 md:mt-2 w-20 bg-white rounded-md">
           {availableLocales.map((availableLocale) => (
             <Menu.Item key={availableLocale}>
               {() => (
                 <button
                   onClick={() => changeLocale(availableLocale)}
-                  className="cursor-pointer h-[37px] hover:bg-beige-100 flex w-full px-4 py-2 font-normal text-[13px] text-green-800 justify-between items-center"
+                  className="cursor-pointer h-[37px] hover:bg-beige-100 flex w-full px-4 py-2 font-medium text-[13px] text-green-700 justify-between items-center"
                 >
                   {labels[availableLocale] || availableLocale.toUpperCase()}
                   {locale === availableLocale && <CheckIcon className="text-orange-500" fontSize="small" />}

@@ -109,7 +109,7 @@ strong {
   line-height: 0.85;
 }
 
-.hero-title-matrix {
+.hero-title-matrix, .hero-title-matrix-hover:hover {
   position: relative;
   color: #fff;
   text-shadow: 
@@ -117,6 +117,14 @@ strong {
     0px 0px 8px #57C12D, 
     0px 0px 110px #71D774, 
     0px 0px 38px #36922F;
+}
+
+.hero-title-matrix-hover:hover span:last-child {
+  display: none;
+}
+
+.hero-title-matrix-hover:hover:last-child::after {
+  content: ";";
 }
 
 .hero-title-matrix::before {
@@ -156,6 +164,14 @@ strong {
 
 .card-box-shadow {
   box-shadow: 0px 4px 16.6px 0px rgba(0, 0, 0, 0.10);
+}
+
+.swipper-scroll {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 @media (min-width: 768px) {

@@ -42,7 +42,7 @@ export function Informations() {
             </div>
 
             <a className="block text-lg text-beige-100 rounded-full bg-green-700 mb-2 text-center transition-all hover:bg-orange-500 py-1.5 font-medium decoration-0"
-                href="https://www.openstreetmap.org/way/23173231#map=18/48.822675/2.331749"
+                href="https://maps.app.goo.gl/KVAVVDkdeRiumd9PA"
                 target="_blank"> {t(`informations.buttonMaps`)} </a>
             <a className="block text-lg rounded-full bg-beige-300/[0.5] text-center transition-all hover:bg-beige-300 py-1.5 font-medium decoration-0"
                 href="mailto:contact-hackdays@numerique.gouv.fr"

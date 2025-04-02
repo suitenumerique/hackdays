@@ -18,11 +18,11 @@ export function Prets() {
   const { t, locale } = useTranslations()
 
   return (
-    <div className="relative w-full bg-beige-100 py-14 md:py-[106px] py-8">
+    <div className="relative w-full py-14 md:py-[106px] py-8">
       <div className="container mx-auto">
         <AnimatedSection>
           <Chip text={t('prets.tag')} type="light" />
-          <h3 className="font-title leading-14 py-8 uppercase text-green-700 text-[59px] md:text-[86px]">
+          <h3 className="font-title leading-14 py-3 md:py-8 uppercase text-green-700 text-[59px] md:text-[86px]">
             {t('prets.title')}
           </h3>
           <p className="text-green-500 max-w-[800px] text-normal"
@@ -30,31 +30,35 @@ export function Prets() {
                 __html: t('prets.description'),
               }}></p>
         </AnimatedSection>
-        <div className="grid md:grid-cols-2 gap-10 mt-[40px]">
+        <div className="grid md:grid-cols-2 md:gap-10 mt-8 md:mt-[40px]">
           <AnimatedSection delay={0.2}>
-            <img src={`${locale === 'en' ? ScreenShotDocsEn.src : ScreenShotDocs.src}`} className="hidden md:block rounded-[16px] card-box-shadow" />
+          <div className="rounded-[16px] overflow-hidden card-box-shadow">
+            <img src={`${locale === 'en' ? ScreenShotDocsEn.src : ScreenShotDocs.src}`} className="hidden md:block" />
             <img src={`${locale === 'en' ? ScreenShotDocsMobileEn.src : ScreenShotDocsMobile.src}`}
-            className="md:hidden rounded-[16px] card-box-shadow" />
-            <div className="flex items-center justify-between mt-6">
+            className="md:hidden" />
+          </div>
+            <div className="flex items-center justify-between mt-6 ml-1">
               <img src={LogoDocs.src} className="w-[100px] md:w-[148px]" />
               <a className="rounded-full bg-beige-300/[0.5] transition-all hover:bg-beige-300 py-1.5 px-4 font-medium decoration-0"
                 href="https://github.com/suitenumerique/docs" target="_blank">Github</a>
             </div>
-            <p className="mt-3" dangerouslySetInnerHTML={{
+            <p className="ml-2 mt-3 text-green-500" dangerouslySetInnerHTML={{
               __html: t('prets.docs.description'),
             }}></p>
           </AnimatedSection>
 
-          <div className="mt-[40px] md:mt-0">
-           <AnimatedSection delay={0.3}>
-            <img src={ScreenShotVisio.src} className="hidden md:block rounded-[16px] card-box-shadow" />
-            <img src={ScreenShotVisioMobile.src} className="md:hidden rounded-[16px] card-box-shadow" />
-            <div className="flex items-center justify-between mt-6">
+          <div className="mt-8 md:mt-0">
+           <AnimatedSection delay={0.2}>
+           <div className="rounded-[16px] overflow-hidden card-box-shadow">
+            <img src={ScreenShotVisio.src} className="hidden md:block" />
+            <img src={ScreenShotVisioMobile.src} className="md:hidden" />
+          </div>
+            <div className="flex items-center justify-between mt-6 ml-1">
               <img src={LogoVisio.src} className="w-[100px] md:w-[148px]" />
               <a className="rounded-full bg-beige-300/[0.5] transition-all hover:bg-beige-300 py-1.5 px-4 font-medium decoration-0"
                 href="https://github.com/suitenumerique/meet" target="_blank">Github</a>
             </div>
-            <p className="mt-3" dangerouslySetInnerHTML={{
+            <p className="ml-2 mt-3 text-green-500" dangerouslySetInnerHTML={{
               __html: t('prets.visio.description'),
             }}></p>
             </AnimatedSection>

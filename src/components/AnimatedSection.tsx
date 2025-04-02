@@ -10,7 +10,7 @@ interface RevealProps {
 
 export default function AnimatedSection({ children, delay = 0 }: RevealProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px 0px" });
+  const isInView = useInView(ref, { once: true, margin: "-200px 0px" });
   const prefersReducedMotion = useReducedMotion();
 
   // Désactive l'animation si l'utilisateur préfère moins d'animations

@@ -13,7 +13,7 @@ export function NavBar() {
 
   const sequence = async () => {
     await animate(nav.current, { top: 20 }, { delay: 0.2, duration: 0.5, ease: "easeOut" });
-    await animate(nav.current, { width: 492 }, { duration: 0.5, ease: "easeOut" });
+    await animate(nav.current, { width: 'auto' }, { duration: 0.5, ease: "easeOut" });
   };
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export function NavBar() {
       initial={{ top: '-100px', backgroundColor: 'transparent'}}
       animate={{ top: '0px', backgroundColor: 'white' }}
       transition={{ delay: 0, duration: 0.3, ease: "easeOut" }}
-      className="items-center flex z-1000 w-full bg-white fixed md:hidden top-[0px] left-[0px] h-[40px] justify-between">
+      className="items-center flex border-b border-beige-200 z-1000 w-full bg-white fixed md:hidden top-[0px] left-[0px] h-[48px] justify-between">
       <LocaleSwitcher />
        <Link to="GameSetCode" smooth={true}>
           <img
@@ -35,7 +35,7 @@ export function NavBar() {
       </Link>
       <a href="https://pretix.dgnum.eu/dgnum/hack-lsn-2025/"
         target="_blank"
-        className="transition-all text-[13px] text-green-800 p-4 hover:text-orange-500">
+        className="transition-all text-[13px] text-green-700 p-4 hover:text-orange-500 font-medium">
         {t('menu.signup')}
       </a>
     </motion.div>
@@ -54,29 +54,29 @@ export function NavBar() {
         transition={{ delay: 3, duration: 0.5 }}
         className="absolute top-1.25"
       >
-          <img className="" src={Logo.src} />
+          <img className="cursor-pointer" src={Logo.src} />
       </motion.a>
       <motion.ul
         initial={{ opacity: 0 }}
         animate={{ opacity: 1}}
         transition={{ delay: 1.5, duration: 0.5, ease: "easeOut" }}
-        className="flex gap-4 items-center justify-between">
+        className="flex items-center justify-between">
       <li>
         <Link to="GameSetCode" smooth={true} activeClass="text-orange-600" spy={true}>
-          <img className="w-[124px] overflow-hidden" src={LogoHackDays.src} />
+          <img className="w-[124px] overflow-hidden cursor-pointer" src={LogoHackDays.src} />
         </Link>
       </li>
-      <li className="flex items-center hover:text-orange-600 cursor-pointer">
+      <li className="flex items-center hover:text-orange-600 cursor-pointer px-[12px] pl-[18px]">
         <Link to="AVosMarques" smooth={true} activeClass="text-orange-600" spy={true}>
           {t('menu.tracks')}
         </Link>
       </li>
-      <li className="flex items-center hover:text-orange-600 cursor-pointer">
+      <li className="flex items-center hover:text-orange-600 cursor-pointer px-[12px]">
         <Link to="Partez" smooth={true} activeClass="text-orange-600" spy={true}>
           {t('menu.program')}
         </Link>
       </li>
-      <li className="flex items-center hover:text-orange-600 cursor-pointer">
+      <li className="flex items-center hover:text-orange-600 cursor-pointer px-[12px]">
         <Link to="Informations" smooth={true} activeClass="text-orange-600" spy={true}>
           {t('menu.info')}
         </Link>
