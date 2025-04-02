@@ -32,10 +32,10 @@ export function Prets() {
         </AnimatedSection>
         <div className="grid md:grid-cols-2 md:gap-10 mt-8 md:mt-[40px]">
           <AnimatedSection delay={0.2}>
-          <div className="rounded-[16px] overflow-hidden card-box-shadow">
-            <img src={`${locale === 'en' ? ScreenShotDocsEn.src : ScreenShotDocs.src}`} className="hidden md:block" />
+          <div className="">
+            <img src={`${locale === 'en' ? ScreenShotDocsEn.src : ScreenShotDocs.src}`} className="hidden rounded-[16px] md:block w-full card-box-shadow" />
             <img src={`${locale === 'en' ? ScreenShotDocsMobileEn.src : ScreenShotDocsMobile.src}`}
-            className="md:hidden" />
+            className="md:hidden rounded-[6.9%] w-full card-box-shadow" />
           </div>
             <div className="flex items-center justify-between mt-6 ml-1">
               <img src={LogoDocs.src} className="w-[100px] md:w-[148px]" />
@@ -49,9 +49,9 @@ export function Prets() {
 
           <div className="mt-8 md:mt-0">
            <AnimatedSection delay={0.2}>
-           <div className="rounded-[16px] overflow-hidden card-box-shadow">
-            <img src={ScreenShotVisio.src} className="hidden md:block" />
-            <img src={ScreenShotVisioMobile.src} className="md:hidden" />
+           <div className="">
+            <img src={ScreenShotVisio.src} className="hidden md:block w-full rounded-[16px] card-box-shadow" />
+            <img src={ScreenShotVisioMobile.src} className="md:hidden w-full rounded-[6.9%] card-box-shadow" />
           </div>
             <div className="flex items-center justify-between mt-6 ml-1">
               <img src={LogoVisio.src} className="w-[100px] md:w-[148px]" />

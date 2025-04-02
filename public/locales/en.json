@@ -57,6 +57,11 @@
         "tag": "End to end encryption",
         "title": "Decipher me, if you can",
         "description": "Fully encripted communication and collaboration for full-blown sovereignty. E2EE, quantum proof encryption, Matrix protocol, PGP, Zero Knowledge Proof ..."
+      },
+      "8": {
+        "tag": "Carte blanche",
+        "title": "Bring your own track.",
+        "description": "If none of the topics suit you, you can, of course, propose your own."
       }
     }
   },
@@ -75,7 +80,7 @@
     "tag": "Program",
     "title": "GO!",
     "description": "3 days to sprint towards digital sovereignty! During the three days, meal trays will be provided.",
-    "button": "Reserve my ticket",
+    "button": "Book my ticket",
     "days": {
       "1": {
         "date": "2 June",
@@ -99,7 +104,7 @@
   },
   "histoire": {
     "tag": "News",
-    "title": "The story is already being written!",
+    "title": "We are already making history!",
     "news": {
       "hn": {
         "title": "Docs #1 on Hacker News",

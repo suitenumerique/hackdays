@@ -130,6 +130,12 @@ export function AVosMarques() {
       tag: t('avosmarques.cards.7.tag'),
       title: t('avosmarques.cards.7.title'),
       description: t('avosmarques.cards.7.description'),
+    },
+    {
+      icon: "🃏",
+      tag: t('avosmarques.cards.8.tag'),
+      title: t('avosmarques.cards.8.title'),
+      description: t('avosmarques.cards.8.description'),
     }
   ]
 

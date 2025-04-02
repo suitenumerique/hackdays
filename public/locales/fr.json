@@ -57,6 +57,11 @@
         "tag": "Chiffrement de bout en bout.",
         "title": "Decipher me, if you can",
         "description": "Communication et collaboration entièrement chiffrées pour une souveraineté totale. E2EE, chiffrement résistant aux quantiques, protocole Matrix, PGP, preuve à connaissance nulle ..."
+      },
+      "8": {
+        "tag": "Carte blanche.",
+        "title": "Bring your own track",
+        "description": "Si aucun sujet ne vous convient, vous pourrez évidemment proposer le votre."
       }
     }
   },
