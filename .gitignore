@@ -47,3 +47,5 @@ next-env.d.ts
 
 # virtual env for gitlint
 /env-gitlint
+.direnv
+result
