@@ -2,8 +2,6 @@ import Head from 'next/head'
 import '@/styles/globals.css'
 import React from 'react'
 import type { AppProps } from 'next/app'
-import { useTranslations } from '@/hooks/useTranslations'
-import { useEffect, useState } from 'react'
 
 function App({ Component, pageProps }: AppProps) {
 
@@ -14,7 +12,12 @@ function App({ Component, pageProps }: AppProps) {
             <meta
               key="ogtitle"
               property="og:title"
-              content="HackDays - Hackathon Digital Workspace - 2, 3 et 4 Juin 2025"
+              content="HackDays - Hackathon Digital Workspace"
+            />
+            <meta
+              key="ogdescription"
+              property="og:description"
+              content="Les 2, 3 et 4 Juin 2025 - Travaillons ensemble à développer des outils souverains & open source"
             />
             <link
               href="favicon.png"
@@ -32,8 +35,8 @@ function App({ Component, pageProps }: AppProps) {
               content="/images/rs.png"
             />
             <link rel="preload" href="/images/hero.webp" as="image" />
-            <link rel="preload" href="/locales/fr.json" as="fetch" type="application/json" crossorigin="anonymous" />
-            <link rel="preload" href="/locales/en.json" as="fetch" type="application/json" crossorigin="anonymous" />
+            <link rel="preload" href="/locales/fr.json" as="fetch" type="application/json" />
+            <link rel="preload" href="/locales/en.json" as="fetch" type="application/json" />
             <link rel="preload" href="/images/hero-mobile.png" as="image" />
             <link rel="preload" href="/images/hero-matrix.webp" as="image" />
             <link rel="preload" href="/fonts/DMMono-Medium.ttf" as="font" type="font/woff2" crossOrigin="anonymous" />
