@@ -27,7 +27,7 @@ export const LocaleSwitcher = () => {
   };
 
   return (
-    <Menu as="div" className="z-100 md:fixed block text-left top-[20px] right-[20px]">
+    <Menu as="div" className="z-100 md:fixed w-[88px] md:w-auto block text-left top-[20px] right-[20px]">
       <Menu.Button
         className="cursor-pointer flex md:border-beige-200 text-green-700 items-center bg-white md:border rounded-full px-4 py-2 h-[40px] text-[13px] font-medium"
       >

@@ -178,6 +178,18 @@ strong {
 }
 
 @media (min-width: 768px) {
+  .relative.border-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 0.75rem;
+    padding: 2px;
+    background: linear-gradient(to bottom, var(--color-beige-200), rgba(255, 255, 255, 0.02));
+  }
+  .card-box-shadow-desktop {
+    box-shadow: 0px 4px 16.6px 0px rgba(0, 0, 0, 0.10);
+  }
   .locale-switcher-shadow {
     box-shadow: 0px 4px 9.3px 0px rgba(75, 41, 28, 0.05);
   }

@@ -108,7 +108,7 @@ export function AVosMarques() {
       description: t('avosmarques.cards.3.description'),
     },
     {
-      icon: "🧱",
+      icon: "🏗️",
       tag: t('avosmarques.cards.4.tag'),
       title: t('avosmarques.cards.4.title'),
       description: t('avosmarques.cards.4.description'),

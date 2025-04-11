@@ -11,8 +11,17 @@ import ScreenShotVisioMobile from '@/assets/screenshot/screenshot-visio-mobile.p
 import ScreenShotDocsEn from '@/assets/screenshot/screenshot-docs-en.png'
 import ScreenShotDocsMobileEn from '@/assets/screenshot/screenshot-docs-mobile-en.png'
 
+import ScreenShotGrist from '@/assets/screenshot/screenshot-grist.png'
+import ScreenShotGristMobile from '@/assets/screenshot/screenshot-grist-mobile.png'
+
+import ScreenShotAppMystere from '@/assets/screenshot/screenshot-mystere.png'
+import ScreenShotAppMystereMobile from '@/assets/screenshot/screenshot-mystere-mobile.png'
+
 import LogoVisio from '@/assets/logo/logo-visio.svg'
 import LogoDocs from '@/assets/logo/logo-docs.svg'
+import LogoGrist from '@/assets/logo/logo-grist.svg'
+import LogoMystere from '@/assets/logo/logo-appmystere.svg'
+import LogoMystereEn from '@/assets/logo/logo-mystere-en.svg'
 
 export function Prets() {
   const { t, locale } = useTranslations()
@@ -60,6 +69,42 @@ export function Prets() {
             </div>
             <p className="ml-2 mt-3 text-green-500" dangerouslySetInnerHTML={{
               __html: t('prets.visio.description'),
+            }}></p>
+            </AnimatedSection>
+          </div>
+
+          <div className="mt-8 md:mt-0">
+           <AnimatedSection delay={0.2}>
+           <div className="">
+            <img src={ScreenShotGrist.src} className="hidden md:block w-full rounded-[16px] card-box-shadow" />
+            <img src={ScreenShotGristMobile.src} className="md:hidden w-full rounded-[6.9%] card-box-shadow" />
+          </div>
+            <div className="flex items-center justify-between mt-6 ml-1">
+              <img src={LogoGrist.src} className="w-[100px] md:w-[148px]" />
+              <a className="rounded-full bg-beige-300/[0.5] transition-all hover:bg-beige-300 py-1.5 px-4 font-medium decoration-0"
+                href="https://github.com/gristlabs/grist-core" target="_blank">Github</a>
+            </div>
+            <p className="ml-2 mt-3 text-green-500" dangerouslySetInnerHTML={{
+              __html: t('prets.grist.description'),
+            }}></p>
+            </AnimatedSection>
+          </div>
+
+          <div className="mt-8 md:mt-0">
+           <AnimatedSection delay={0.2}>
+           <div className="">
+            <img src={ScreenShotAppMystere.src} className="hidden md:block w-full rounded-[16px] card-box-shadow" />
+            <img src={ScreenShotAppMystereMobile.src} className="md:hidden w-full rounded-[6.9%] card-box-shadow" />
+          </div>
+            <div className="flex items-center justify-between mt-6 ml-1">
+              {locale === 'en' ? (
+                <img className="h-[36px] md:h-[53px]" src={LogoMystereEn.src} />
+              ) : (
+                <img className="w-[196px] md:w-[290px]" src={LogoMystere.src} />
+              )}
+            </div>
+            <p className="ml-2 mt-3 text-green-500" dangerouslySetInnerHTML={{
+              __html: t('prets.mystere.description'),
             }}></p>
             </AnimatedSection>
           </div>

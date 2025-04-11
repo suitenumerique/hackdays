@@ -13,6 +13,8 @@ mission:
     3: On transforme
   title: Votre Mission
   description: Pendant 3 jours, participez à la création d'une suite bureautique open source, destinée à renforcer la souveraineté numérique européenne.
+  button: S’inscrire maintenant
+  disclaimer: Places limitées.
 avosmarques:
   tag: Sujets de hack
   title: À vos marques.

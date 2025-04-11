@@ -3,10 +3,17 @@ import { Chip } from '@/components/Chip'
 
 import logoDINUM from '@/assets/logo/logo-dinum.svg'
 import logoDGNUM from '@/assets/logo/logo-dgnum.svg'
-// import logoCFF from '@/assets/logo/logo-cff.svg'
 
 import logoENS from '@/assets/logo/logo-ens.svg'
+import logoENSPSL from '@/assets/logo/logo-ens-psl-green.svg'
 import ENS from '@/assets/building.png'
+
+import logoCFF from '@/assets/logo/logo-cff.svg'
+import logoCnrs from '@/assets/logo/logo-cnrs.svg'
+import logoUps from '@/assets/logo/logo-ups.svg'
+import logoUga from '@/assets/logo/logo-uga.svg'
+import logoInria from '@/assets/logo/logo-inria.svg'
+
 
 import AnimatedSection from '@/components/AnimatedSection'
 
@@ -22,7 +29,13 @@ export function Informations() {
           {t('informations.title')}
         </h3>
 
-        <div className="grid md:grid-cols-3 gap-10 md:my-[40px]">
+        <p className="text-base md:text-xl text-green-500 text-center max-w-[660px] mx-auto mb-[36px] md:mb-0"
+            dangerouslySetInnerHTML={{
+             __html: t('informations.description'),
+          }}>
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-10 mb-6 md:my-[40px]">
         <div className="col-span-1">
           <div className="rounded-2xl border border-beige-200 bg-white/[0.75] p-6 text-center"
             style={{ boxShadow: '0px 4px 16.6px 0px rgba(0, 0, 0, 0.10)'}}>
@@ -55,14 +68,29 @@ export function Informations() {
         </div>
         </div>
 
-        <div className="grid grid-cols-3 flex text-center max-w-[413px] pt-6 my-6 mx-auto gap-x-11">
-          <img src={logoDINUM.src} />
-          <img src={logoENS.src} className="mx-auto self-end" />
-          <img src={logoDGNUM.src} className="self-end" />
+        <AnimatedSection delay={0.2}>
+        <div className="text-green-500 pt-6">
+        { t('informations.organizers') }
         </div>
-{/*        <div className="flex justify-center pt-6">
-          <img src={logoCFF.src} className="w-[103px] self-end" />
-        </div>*/}
+        <div className="relative md:flex align-space-between items-end text-center m-auto md:max-w-[542px] max-w-[139px] py-6 mx-auto gap-[47px]">
+          <img src={logoDINUM.src} className="w-[139px]"/>
+          <img src={logoENSPSL.src} className="mx-auto w-[191px] my-[30px] md:my-0" />
+          <img src={logoDGNUM.src} className="mx-auto w-[120px]"/>
+        </div>
+        </AnimatedSection>
+        <AnimatedSection delay={0.2}>
+        <div className="text-green-500 mt-[56px] md:pt-6">
+        { t('informations.partners') }
+        </div>
+
+        <div className="flex align-space-between flex-wrap md:flex-nowrap items-end text-center m-auto md:max-w-[688px] max-w-[162px] py-6 mx-auto gap-[32px] md:gap-[47px]">
+          <img src={logoCFF.src} className="w-[80px] md:w-[128px] md:self-center"/>
+          <img src={logoCnrs.src} className="w-[33px] md:w-[191px]" />
+          <img src={logoInria.src} className="w-[72px] md:w-[120px] self-center"/>
+          <img src={logoUga.src} className="w-[55px] md:w-[120px]"/>
+          <img src={logoUps.src} className="w-[96px] md:w-[152px] mx-auto"/>
+        </div>
+        </AnimatedSection>
         </AnimatedSection>
 
       </div>

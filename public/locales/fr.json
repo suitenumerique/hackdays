@@ -16,7 +16,9 @@
       "3": "On transforme"
     },
     "title": "Votre Mission",
-    "description": "Pendant 3 jours, participez à la création d'applications bureautiques open sources, destinées à renforcer la souveraineté numérique européenne."
+    "description": "Pendant 3 jours, participez à la création d'applications bureautiques open sources, destinées à renforcer la souveraineté numérique européenne.",
+    "button": "S’inscrire maintenant",
+    "disclaimer": "Places limitées."
   },
   "avosmarques": {
     "tag": "Sujets de hack",
@@ -31,22 +33,22 @@
       "2": {
         "tag": "IA et automatisation",
         "title": "AI boosted",
-        "description": "RAG et chat avec vos fichiers, transcription automatique, Agentic AI pour l’édition intelligente, et autres fonctionnalités boostées à l’IA."
+        "description": "Injectez de l’IA dans les parcours utilisateurs : recherche intelligente, Agentic AI, transcription automatique....et toute autre application pertinente !"
       },
       "3": {
         "tag": "Infrastructure et accessibilité pour tous.",
         "title": "Click. Deploy. Make history.",
-        "description": "Déploiement 1-clic d'applications, amélioration de l’accessibilité, optimisation des workspaces et outils OPS."
+        "description": "Améliorez l’accessibilité des produits, et packagez les applications pour des déploiements optimisés pour tous !"
       },
       "4": {
         "tag": "Custom blocks et extensions.",
         "title": "Blocks Unleashed",
-        "description": "Intégration de nouveaux blocs (tableur, canvas, tableau blanc), personnalisation et nouvelles fonctionnalités pour enrichir les usages."
+        "description": "Intégrez de nouveaux blocs (tableur, canvas, tableau blanc… ou votre solution ?), personnalisez les fonctionnalités pour enrichir les usages."
       },
       "5": {
         "tag": "Adoption et nouveaux modèles.",
         "title": "Boost & Scale",
-        "description": "Marketplace d’extensions, amélioration du support utilisateur, stratégies d’adoption et croissance d'un écosystème d'apps."
+        "description": "Construisez une marketplace d’extensions, améliorez le support utilisateur, et proposez des stratégies d’adoption et de croissance d'un écosystème d'apps."
       },
       "6": {
         "tag": "Cas d'usages thématiques",
@@ -56,7 +58,7 @@
       "7": {
         "tag": "Chiffrement de bout en bout.",
         "title": "Decipher me, if you can",
-        "description": "Communication et collaboration entièrement chiffrées pour une souveraineté totale. E2EE, chiffrement résistant aux quantiques, protocole Matrix, PGP, preuve à connaissance nulle ..."
+        "description": "Proposez une communication et une collaboration entièrement chiffrées pour une souveraineté totale. E2EE, chiffrement résistant aux quantiques, protocole Matrix, PGP, zero knowledge proof..."
       },
       "8": {
         "tag": "Carte blanche.",
@@ -68,24 +70,31 @@
   "prets": {
     "tag": "Ressources",
     "title": "PRÊTS ?",
-    "description": "Familiarisez-vous dès maintenant avec Docs et Visio, des applications open-source basées sur Django, Next.js et Vite.js.",
+    "description": "Familiarisez-vous dès maintenant avec les apps open-source Docs, Visio et Grist.",
     "docs": {
       "description": "L’éditeur de documents open source basé sur la librairie <a class=\"underline\" href=\"https://www.blocknotejs.org/\" target=\"_blank\">BlockNote.js</a>."
     },
     "visio": {
       "description": "L’app de visioconférence nouvelle génération, basée sur <a class=\"underline\" href=\"https://livekit.io/\" target=\"_blank\">Livekit</a>."
+    },
+    "grist": {
+      "description": "Le tableur collaboratif open-source pour structurer vos bases de données et créer des application sans coder."
+    },
+    "mystere": {
+      "title": "App mystère",
+      "description": "Participez à l’évènement pour découvrir une app open-source inédite !"
     }
   },
   "partez": {
     "tag": "Programme",
     "title": "Partez !",
     "description": "3 jours pour sprinter vers la souveraineté numérique ! Sur les trois jours, des plateaux repas seront mis à disposition.",
-    "button": "Réserver son ticket",
+    "button": "S’inscrire maintenant",
     "days": {
       "1": {
         "date": "2 Juin",
-        "title": "Formation des équipes & développement",
-        "description": "Présentation des tracks, validation des équipes, début du développement.",
+        "title": "Développement",
+        "description": "Présentation des tracks, création des équipes, début du développement.",
         "chip": "Réservé aux hackers"
       },
       "2": {
@@ -147,9 +156,12 @@
   "informations": {
     "tag": "Informations pratiques",
     "title": "RDV À L’ENS",
+    "description": "Le lieu est facile à rejoindre en transport en commun : vous pouvez prendre le <strong>RER B</strong>, le métro <strong>ligne 4</strong>, le <strong>tram 3a</strong> ou les <strong>bus 92, 68</strong> et <strong>38</strong>. Il est conseillé de réserver un hôtel proche de ces lignes.",
     "days": "Lundi 2 juin <br /> Mardi 3 juin <br /> Mercredi 4 juin",
     "hours": "9h00 - 00h00  <br /> 9h00 - 00h00  <br /> 9h00 - 18h00",
     "buttonSignup": "S'inscrire",
-    "buttonContact": "Nous contacter"
+    "buttonContact": "Nous contacter",
+    "organizers": "Organisateurs",
+    "partners": "Partenaires"
   }
 }
