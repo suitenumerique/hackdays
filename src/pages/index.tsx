@@ -1,5 +1,5 @@
 import { NavBar } from '@/components/NavBar'
-
+import { Footer } from '@/components/Footer'
 import { Hero } from '@/sections/Hero'
 // import { Europe } from '@/sections/Europe'
 import { Mission } from '@/sections/Mission'
@@ -23,6 +23,7 @@ export default function Index() {
           <Histoire />
           <Informations />
         </div>
+        <Footer />
       </div>
     </div>
   )

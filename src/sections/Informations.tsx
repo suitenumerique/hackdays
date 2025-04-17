@@ -13,7 +13,7 @@ import logoCnrs from '@/assets/logo/logo-cnrs.svg'
 import logoUps from '@/assets/logo/logo-ups.svg'
 import logoUga from '@/assets/logo/logo-uga.svg'
 import logoInria from '@/assets/logo/logo-inria.svg'
-
+import logoAnssi from '@/assets/logo/logo-anssi.svg'
 
 import AnimatedSection from '@/components/AnimatedSection'
 
@@ -83,12 +83,15 @@ export function Informations() {
         { t('informations.partners') }
         </div>
 
-        <div className="flex align-space-between flex-wrap md:flex-nowrap items-end text-center m-auto md:max-w-[688px] max-w-[162px] py-6 mx-auto gap-[32px] md:gap-[47px]">
+        <div className="flex align-space-between flex-wrap md:flex-nowrap items-end text-center m-auto md:max-w-[488px] max-w-[162px] py-6 mx-auto gap-[32px] md:gap-[47px]">
           <img src={logoCFF.src} className="w-[80px] md:w-[128px] md:self-center"/>
           <img src={logoCnrs.src} className="w-[33px] md:w-[191px]" />
           <img src={logoInria.src} className="w-[72px] md:w-[120px] self-center"/>
-          <img src={logoUga.src} className="w-[55px] md:w-[120px]"/>
+          <img src={logoUga.src} className="w-[55px] md:w-[120px] mx-auto"/>
+        </div>
+        <div className="flex align-space-between flex-nowrap md:flex-nowrap items-end text-center m-auto md:max-w-[255px] max-w-[180px] md:py-6 mx-auto gap-[32px] md:gap-[47px]">
           <img src={logoUps.src} className="w-[96px] md:w-[152px] mx-auto"/>
+          <img src={logoAnssi.src} className="w-[96px] md:w-[152px] mx-auto"/>
         </div>
         </AnimatedSection>
         </AnimatedSection>

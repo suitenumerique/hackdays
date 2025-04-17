@@ -27,7 +27,7 @@
     "cards": {
       "1": {
         "tag": "Travail collaboratif en local-first.",
-        "title": "Fixing collaboration",
+        "title": "Liberty, Equality, CRDT",
         "description": "Améliorez la collaboration en temps réel avec des CRDT, synchronisation offline, et outils décentralisés."
       },
       "2": {
@@ -61,6 +61,11 @@
         "description": "Proposez une communication et une collaboration entièrement chiffrées pour une souveraineté totale. E2EE, chiffrement résistant aux quantiques, protocole Matrix, PGP, zero knowledge proof..."
       },
       "8": {
+        "tag": "Cybersécurité",
+        "title": "Make it safe",
+        "description": "Imaginez et développez des solutions pour rendre nos outils de travail collaboratif toujours plus sécurisés."
+      },
+      "9": {
         "tag": "Carte blanche.",
         "title": "Bring your own track",
         "description": "Si aucun sujet ne vous convient, vous pourrez évidemment proposer le votre."
@@ -163,5 +168,10 @@
     "buttonContact": "Nous contacter",
     "organizers": "Organisateurs",
     "partners": "Partenaires"
+  },
+  "footer": {
+    "license": "Sauf mention contraire, les contenus de ce site sont disponibles sous <a class=\"underline external-link-grey\" href=\"hhttps://github.com/etalab/licence-ouverte/blob/master/LO.md\" target=\"_blank\">licence etalab-2.0</a>",
+    "accessiblity": "Accessibilité : audit en cours",
+    "legal": "Mentions légales"
   }
 }

@@ -3,6 +3,7 @@ import { Menu, Transition } from '@headlessui/react'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 import CheckIcon from '@mui/icons-material/Check'
 import { useTranslations } from '@/hooks/useTranslations';
+import { useRouter } from 'next/router'
 
 const labels: Record<string, string> = {
   en: 'EN',
@@ -10,6 +11,8 @@ const labels: Record<string, string> = {
 }
 
 export const LocaleSwitcher = () => {
+  const router = useRouter();
+
   const { locale, availableLocales } = useTranslations();
   const [isClient, setIsClient] = useState(false)
 
@@ -23,7 +26,10 @@ export const LocaleSwitcher = () => {
 
   const changeLocale = (newLocale: string) => {
     localStorage.setItem('locale', newLocale);
-    window.location.reload();
+    console.log(router.pathname);
+    if (router.pathname) {
+      router.replace(`/${newLocale}`);
+    }
   };
 
   return (

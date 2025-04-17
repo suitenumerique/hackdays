@@ -27,8 +27,12 @@ function useTranslations() {
   }, [locale]);
 
   function changeLocale(newLocale: string) {
-    localStorage.setItem('locale', newLocale);
-    window.location.reload();
+    const lastLocale = localStorage.getItem('locale');
+    if (lastLocale !== newLocale) {
+      localStorage.setItem('locale', newLocale);
+      setLocale(newLocale);
+      window.location.reload();
+    }
   }
 
   function t(key: string): string {
