@@ -26,22 +26,22 @@
     "description": "Let’s unite our efforts around a clear topic: <strong>everyday collaborative tools</strong>. Text editing, spreadsheets, messaging, video conferencing, kanbans: all these playgrounds are available to you. Discover the first tracks:",
     "cards": {
       "1": {
-        "tag": "Local-first collaborative work.",
+        "tag": "Local-first collaborative work",
         "title": "Liberty, Equality, CRDT",
         "description": "Enhance real-time collaboration with CRDTs, offline synchronization, and decentralized tools."
       },
       "2": {
-        "tag": "AI and automation.",
+        "tag": "AI and automation",
         "title": "AI boosted",
         "description": "Inject AI into user journeys: smart search, agentic AI, automatic transcription... and any other relevant applications!"
       },
       "3": {
-        "tag": "Infrastructure and accessibility for all.",
+        "tag": "Infrastructure and accessibility for all",
         "title": "Click. Deploy. Make history.",
         "description": "Enhance the accessibility of products, and package applications for optimised deployments for everyone!"
       },
       "4": {
-        "tag": "Custom blocks and extensions.",
+        "tag": "Custom blocks and extensions",
         "title": "Blocks Unleashed",
         "description": "Integrate new blocks (spreadsheet, canvas, whiteboard… or your solution?), customise the features to enhance usage."
       },
@@ -65,9 +65,19 @@
         "title": "Make it safe",
         "description": "Imagine and develop solutions to make our collaborative work tools increasingly secure."
       },
-      "9": {
+	  "9": {
+        "tag": "Migration",
+		"title": "Lost in Migration",
+		"description": "Embark on a journey to liberate your workflow from proprietary tools. Come build the migration tools to give everyone a clean a breakup and smooth transition from big tech's walled gardens to La Suite open source alternatives."
+      },
+	  "10": {
+        "tag": "Operating System",
+		"title": "Collaboration Backbone",
+		"description": "Design, develop and test an Operating System architecture as a solid base for all collaborative apps. Fully customisable, atomic updates, update monitoring, full-disk encryption, offline-first, ..."
+      },
+      "11": {
         "tag": "Carte blanche",
-        "title": "Bring your own track.",
+        "title": "Bring your own track",
         "description": "If none of the topics suit you, you can, of course, propose your own."
       }
     }

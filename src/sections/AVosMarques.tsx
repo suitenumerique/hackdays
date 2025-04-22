@@ -131,17 +131,29 @@ export function AVosMarques() {
       title: t('avosmarques.cards.7.title'),
       description: t('avosmarques.cards.7.description'),
     },
-      {
+    {
       icon: "🔒",
       tag: t('avosmarques.cards.8.tag'),
       title: t('avosmarques.cards.8.title'),
       description: t('avosmarques.cards.8.description'),
     },
-    {
-      icon: "🃏",
-      tag: t('avosmarques.cards.9.tag'),
+	{
+      icon: "💔",
+	  tag: t('avosmarques.cards.9.tag'),
       title: t('avosmarques.cards.9.title'),
       description: t('avosmarques.cards.9.description'),
+    },
+    {
+      icon: "🖥️",
+      tag: t('avosmarques.cards.10.tag'),
+      title: t('avosmarques.cards.10.title'),
+      description: t('avosmarques.cards.10.description'),
+    },
+    {
+      icon: "🃏",
+      tag: t('avosmarques.cards.11.tag'),
+      title: t('avosmarques.cards.11.title'),
+      description: t('avosmarques.cards.11.description'),
     }
   ]
 

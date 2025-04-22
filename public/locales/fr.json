@@ -26,7 +26,7 @@
     "description": "Rassemblons nos forces autour d'un sujet clair : les <strong>outils collaboratifs du quotidien</strong>. Edition de texte, tableurs, messagerie, vidéo-conférences, kanbans : tous ces terrains de jeu s'offrent à vous.</br> Découvrez les premières tracks :",
     "cards": {
       "1": {
-        "tag": "Travail collaboratif en local-first.",
+        "tag": "Travail collaboratif en local-first",
         "title": "Liberty, Equality, CRDT",
         "description": "Améliorez la collaboration en temps réel avec des CRDT, synchronisation offline, et outils décentralisés."
       },
@@ -36,17 +36,17 @@
         "description": "Injectez de l’IA dans les parcours utilisateurs : recherche intelligente, Agentic AI, transcription automatique....et toute autre application pertinente !"
       },
       "3": {
-        "tag": "Infrastructure et accessibilité pour tous.",
+        "tag": "Infrastructure et accessibilité pour tous",
         "title": "Click. Deploy. Make history.",
         "description": "Améliorez l’accessibilité des produits, et packagez les applications pour des déploiements optimisés pour tous !"
       },
       "4": {
-        "tag": "Custom blocks et extensions.",
+        "tag": "Custom blocks et extensions",
         "title": "Blocks Unleashed",
         "description": "Intégrez de nouveaux blocs (tableur, canvas, tableau blanc… ou votre solution ?), personnalisez les fonctionnalités pour enrichir les usages."
       },
       "5": {
-        "tag": "Adoption et nouveaux modèles.",
+        "tag": "Adoption et nouveaux modèles",
         "title": "Boost & Scale",
         "description": "Construisez une marketplace d’extensions, améliorez le support utilisateur, et proposez des stratégies d’adoption et de croissance d'un écosystème d'apps."
       },
@@ -56,7 +56,7 @@
         "description": "Santé, Education, Recherche, Agriculture, etc... Imaginez les nouveaux parcours pour vos cas d'usage spécifiques"
       },
       "7": {
-        "tag": "Chiffrement de bout en bout.",
+        "tag": "Chiffrement de bout en bout",
         "title": "Decipher me, if you can",
         "description": "Proposez une communication et une collaboration entièrement chiffrées pour une souveraineté totale. E2EE, chiffrement résistant aux quantiques, protocole Matrix, PGP, zero knowledge proof..."
       },
@@ -66,7 +66,17 @@
         "description": "Imaginez et développez des solutions pour rendre nos outils de travail collaboratif toujours plus sécurisés."
       },
       "9": {
-        "tag": "Carte blanche.",
+        "tag": "Migration",
+        "title": "Lost in Migration",
+		"description": "Libérez votre flux de travail des outils propriétaires. Venez créer les outils de migration qui permettront à chacun de rompre proprement et de passer en douceur des jardins clos des géants de la tech vers les alternatives open source de La Suite."
+      },
+	  "10": {
+        "tag": "Système d'exploitation",
+		"title": "Collaboration Backbone",
+		"description": "Concevez, développez et testez une architecture OS robuste pour les apps collaboratives. Rendez-la personnalisable, avec mises à jour atomiques, suivi des updates, chiffrement disque et mode hors ligne."
+      },
+	  "11": {
+        "tag": "Carte blanche",
         "title": "Bring your own track",
         "description": "Si aucun sujet ne vous convient, vous pourrez évidemment proposer le votre."
       }
