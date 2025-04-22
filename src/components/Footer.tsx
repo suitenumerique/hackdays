@@ -23,7 +23,8 @@ export const Footer = () => {
         <div className="flex flex-wrap justify-between mb-6">
           <a
             className="w-fit flex no-wrap items-center gap-2 sm:gap-6 hover:bg-white-1 p-4 pl-0 transition ease-in-out delay-50 duration-300 min-w-[114px] ml-[-0.5rem] overflow-hidden"
-            href="/"
+            href="https://www.numerique.gouv.fr/"
+            target="_blank"
             title={`${t('common.back_to_home')} - ${t('common.la_suite')}`}
           >
             <p className="logo-footer text-base xs:text-xl font-bold leading-[1.0317460317em] tracking-[-.01em] pl-2 uppercase align-middle inline-block">

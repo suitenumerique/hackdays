@@ -26,9 +26,8 @@ export const LocaleSwitcher = () => {
 
   const changeLocale = (newLocale: string) => {
     localStorage.setItem('locale', newLocale);
-    console.log(router.pathname);
     if (router.pathname) {
-      router.replace(`/${newLocale}`);
+      window.location.href = `/${newLocale}`;
     }
   };
 
