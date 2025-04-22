@@ -14,6 +14,7 @@ import logoUps from '@/assets/logo/logo-ups.svg'
 import logoUga from '@/assets/logo/logo-uga.svg'
 import logoInria from '@/assets/logo/logo-inria.svg'
 import logoAnssi from '@/assets/logo/logo-anssi.svg'
+import logoEUOS from '@/assets/logo/logo-euos.svg'
 
 import AnimatedSection from '@/components/AnimatedSection'
 
@@ -89,9 +90,10 @@ export function Informations() {
           <img src={logoInria.src} className="w-[72px] md:w-[120px] self-center"/>
           <img src={logoUga.src} className="w-[55px] md:w-[120px] mx-auto"/>
         </div>
-        <div className="flex align-space-between flex-nowrap md:flex-nowrap items-end text-center m-auto md:max-w-[255px] max-w-[180px] md:py-6 mx-auto gap-[32px] md:gap-[47px]">
+        <div className="flex align-space-between flex-wrap md:flex-nowrap items-center text-center m-auto md:max-w-[464px] max-w-[266px] md:py-6 mx-auto gap-[32px] md:gap-[47px]">
           <img src={logoUps.src} className="w-[96px] md:w-[152px] mx-auto"/>
-          <img src={logoAnssi.src} className="w-[96px] md:w-[152px] mx-auto"/>
+          <img src={logoAnssi.src} className="w-[54px] md:w-[96px] mx-auto"/>
+          <img src={logoEUOS.src} className="w-[96px] md:w-[152px] mx-auto"/>
         </div>
         </AnimatedSection>
         </AnimatedSection>
