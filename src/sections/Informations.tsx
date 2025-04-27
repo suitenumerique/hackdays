@@ -84,13 +84,13 @@ export function Informations() {
         { t('informations.partners') }
         </div>
 
-        <div className="flex align-space-between flex-wrap md:flex-nowrap items-end text-center m-auto md:max-w-[488px] max-w-[162px] py-6 mx-auto gap-[32px] md:gap-[47px]">
+        <div className="flex align-space-between flex-wrap md:flex-nowrap items-end text-center m-auto md:max-w-[533px] max-w-[162px] py-6 mx-auto gap-[32px] md:gap-[47px]">
           <img src={logoCFF.src} className="w-[80px] md:w-[128px] md:self-center"/>
           <img src={logoCnrs.src} className="w-[33px] md:w-[191px]" />
           <img src={logoInria.src} className="w-[72px] md:w-[120px] self-center"/>
           <img src={logoUga.src} className="w-[55px] md:w-[120px] mx-auto"/>
         </div>
-        <div className="flex align-space-between flex-wrap md:flex-nowrap items-center text-center m-auto md:max-w-[464px] max-w-[266px] md:py-6 mx-auto gap-[32px] md:gap-[47px]">
+        <div className="flex align-space-between flex-wrap md:flex-nowrap items-center text-center m-auto md:max-w-[494px] max-w-[236px] md:py-6 mx-auto gap-[32px] md:gap-[47px]">
           <img src={logoUps.src} className="w-[96px] md:w-[152px] mx-auto"/>
           <img src={logoAnssi.src} className="w-[54px] md:w-[96px] mx-auto"/>
           <img src={logoEUOS.src} className="w-[96px] md:w-[152px] mx-auto"/>
