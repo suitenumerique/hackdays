@@ -18,6 +18,7 @@
     "title": "Your Mission",
     "description": "For three days, take part in the creation of open-source apps aimed at strengthening European digital sovereignty.",
     "button": "Register now",
+    "githubButton": "Propose a project",
     "disclaimer": "Limited places."
   },
   "avosmarques": {
@@ -80,7 +81,8 @@
         "title": "Bring your own track",
         "description": "If none of the topics suit you, you can, of course, propose your own."
       }
-    }
+    },
+    "githubButton": "Hackathon GitHub"
   },
   "prets": {
     "tag": "Resources",
@@ -124,7 +126,8 @@
         "description": "Presentation of projects before a jury followed by conferences. The speakers will be announced here soon.",
         "chip": "Open to visitors"
       }
-    }
+    },
+    "githubButton": "See the proposed projects"
   },
   "histoire": {
     "tag": "News",

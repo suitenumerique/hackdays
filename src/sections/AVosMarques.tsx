@@ -2,6 +2,7 @@ import { useTranslations } from '@/hooks/useTranslations';
 import { Chip } from '@/components/Chip'
 import { useState, useRef } from 'react';
 import AnimatedSection from '@/components/AnimatedSection'
+import { GithubButton } from '@/components/GithubButton';
 
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -171,6 +172,9 @@ export function AVosMarques() {
             dangerouslySetInnerHTML={{
               __html: t('avosmarques.description'),
             }}></p>
+        <div className="flex mt-4 mb-3">
+          <GithubButton text={t('avosmarques.githubButton')} />
+        </div>
         </AnimatedSection>
       </div>
 

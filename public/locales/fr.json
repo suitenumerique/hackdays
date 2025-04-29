@@ -18,6 +18,7 @@
     "title": "Votre Mission",
     "description": "Pendant 3 jours, participez à la création d'applications bureautiques open source, destinées à renforcer la souveraineté numérique européenne.",
     "button": "S’inscrire maintenant",
+    "githubButton": "Proposer un projet",
     "disclaimer": "Places limitées."
   },
   "avosmarques": {
@@ -80,7 +81,8 @@
         "title": "Bring your own track",
         "description": "Si aucun sujet ne vous convient, vous pourrez évidemment proposer le votre."
       }
-    }
+    },
+    "githubButton": "GitHub du hackathon"
   },
   "prets": {
     "tag": "Ressources",
@@ -124,7 +126,8 @@
         "description": "Présentation des projets devant un jury suivi de talks. Les intervenants seront affichés ici prochainement.",
         "chip": "Ouvert aux visiteurs"
       }
-    }
+    },
+    "githubButton": "Voir les projets proposés"
   },
   "histoire": {
     "tag": "News",

@@ -1,6 +1,7 @@
 import { useTranslations } from '@/hooks/useTranslations';
-import { Chip } from '@/components/Chip'
-import AnimatedSection from '@/components/AnimatedSection'
+import { Chip } from '@/components/Chip';
+import AnimatedSection from '@/components/AnimatedSection';
+import { GithubButton } from '@/components/GithubButton';
 
 export function Mission() {
   const { t } = useTranslations()
@@ -36,16 +37,17 @@ export function Mission() {
                   </p>
                 </div>
 
-                  <div className="flex justify-center mt-8">
+                  <div className="flex flex-col md:flex-row justify-center mt-8 gap-3">
                     <a
                       href="https://pretix.dgnum.eu/dgnum/hack-lsn-2025/"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={t('mission.button')}
-                      className="block py-[8px] px-4 text-lg rounded-full bg-orange-600 text-beige-100 text-center transition-all hover:bg-orange-500"
+                      className="flex justify-center py-2 text-lg px-4 text-lg rounded-full bg-orange-600 text-beige-100 text-center transition-all hover:bg-orange-500"
                     >
                       {t('mission.button')}
                     </a>
+                    <GithubButton text={t('mission.githubButton')} />
                   </div>
                   <div className="relative md:pb-10">
                     <p className="mt-[8px] mx-auto text-sm text-green-700 max-w-[478px] text-center">

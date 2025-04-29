@@ -1,6 +1,7 @@
 import { useTranslations } from '@/hooks/useTranslations';
 import { Chip } from '@/components/Chip'
 import AnimatedSection from '@/components/AnimatedSection'
+import { GithubButton } from '@/components/GithubButton';
 
 import Date2 from '@/assets/date/date-2.png'
 import Date3 from '@/assets/date/date-3.png'
@@ -17,19 +18,21 @@ export function Partez() {
         <h3 className="font-title leading-14 py-3 md:py-8 uppercase text-green-700 text-[59px] md:text-[86px]">
           {t('partez.title')}
         </h3>
-        <p className="block text-green-500 max-w-[800px] text-normal mb-8"> 
+        <p className="block text-green-500 max-w-[800px] text-normal mb-4"> 
           {t('partez.description')}
         </p>
-        
+        <div class="flex gap-2 flex-col md:flex-row">
         <a
           href="https://pretix.dgnum.eu/dgnum/hack-lsn-2025/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label={t('partez.button')}
-          className="block inline mt-12 mb-12 px-8 py-3 rounded-full bg-green-700 text-beige-100 text-center transition-all hover:bg-orange-500"
+          className="block text-lg px-4 py-2 rounded-full bg-orange-600 text-beige-100 text-center transition-all hover:bg-orange-500"
         >
           {t('partez.button')}
         </a>
+        <GithubButton text={t('partez.githubButton')} />
+        </div>
         </AnimatedSection>
 
         <AnimatedSection delay={0.2}>
