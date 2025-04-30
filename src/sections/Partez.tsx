@@ -21,7 +21,7 @@ export function Partez() {
         <p className="block text-green-500 max-w-[800px] text-normal mb-4"> 
           {t('partez.description')}
         </p>
-        <div class="flex gap-2 flex-col md:flex-row">
+        <div className="flex gap-2 flex-col md:flex-row">
         <a
           href="https://pretix.dgnum.eu/dgnum/hack-lsn-2025/"
           target="_blank"

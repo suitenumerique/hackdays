@@ -12,6 +12,7 @@ export default function AnimatedSection({ children, delay = 0 }: RevealProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-200px 0px" });
   const prefersReducedMotion = useReducedMotion();
+  const shouldAnimate = !prefersReducedMotion && isInView;
 
   // Désactive l'animation si l'utilisateur préfère moins d'animations
   const animation = prefersReducedMotion
@@ -24,7 +25,7 @@ export default function AnimatedSection({ children, delay = 0 }: RevealProps) {
     <motion.div
       ref={ref}
       initial={{ opacity: 0}}
-      animate={animation}
+      animate={{ opacity: shouldAnimate ? 1 : prefersReducedMotion ? 1 : 0 }}
       transition={{ duration: 0.4, ease: "easeIn", delay }}
     >
       {children}
