@@ -6,6 +6,7 @@ import { GithubButton } from '@/components/GithubButton';
 import Date2 from '@/assets/date/date-2.png'
 import Date3 from '@/assets/date/date-3.png'
 import Date4 from '@/assets/date/date-4.png'
+import LogoDocsMono from '@/assets/logo/logo-docs-mono.svg'
 
 export function Partez() {
   const { t } = useTranslations()
@@ -32,6 +33,16 @@ export function Partez() {
           {t('partez.button')}
         </a>
         <GithubButton text={t('partez.githubButton')} />
+	<a
+	  href="https://docs.numerique.gouv.fr/docs/edaf6617-5102-4bce-b0f0-523b68728bcc/"
+	  target="_blank"
+	  rel="noopener noreferrer"
+	  aria-label={t('partez.programButton')}
+	  className="flex gap-2 text-lg justify-center py-2 items-center px-4 rounded-full bg-green-700 text-beige-100 text-center transition-all hover:bg-orange-500"
+	>
+	  <img src={LogoDocsMono.src} className="text-beige-100" />
+	  {t('partez.programButton')}
+	</a>
         </div>
         </AnimatedSection>
 

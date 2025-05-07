@@ -127,7 +127,8 @@
         "chip": "Open to visitors"
       }
     },
-    "githubButton": "See the proposed projects"
+    "githubButton": "See the proposed projects",
+    "programButton": "See the detailed program"
   },
   "histoire": {
     "tag": "News",
