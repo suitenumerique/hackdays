@@ -40,7 +40,7 @@ export function Informations() {
         <div className="col-span-1">
           <div className="rounded-2xl border border-beige-200 bg-white/[0.75] p-6 text-center"
             style={{ boxShadow: '0px 4px 16.6px 0px rgba(0, 0, 0, 0.10)'}}>
-            <img src={logoENS.src} className="h-[112px] mb-6 mx-auto" />
+            <img src={logoENSPSL.src} className="h-[112px] mb-6 mx-auto" />
             <p className="font-bold text-[22px]">CAMPUS JOURDAN</p>
             <p className="font-bold text-base my-3"> 48 Boulevard Jourdan, <br /> 75014, Paris </p>
 
