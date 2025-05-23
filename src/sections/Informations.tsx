@@ -4,7 +4,6 @@ import { Chip } from '@/components/Chip'
 import logoDINUM from '@/assets/logo/logo-dinum.svg'
 import logoDGNUM from '@/assets/logo/logo-dgnum.svg'
 
-import logoENS from '@/assets/logo/logo-ens.svg'
 import logoENSPSL from '@/assets/logo/logo-ens-psl-green.svg'
 import ENS from '@/assets/building.png'
 
